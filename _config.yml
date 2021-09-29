@@ -10,15 +10,15 @@ description:        Documentation Jekyll theme.
 lang:               en
 
 # Site subpath, e.g. /blog
-baseurl:            "/intel-smart-edge-open"
+baseurl:            "/ideo-specs"
 
 # Permalink URLs structure, for permalink style options see: https://jekyllrb.com/docs/permalinks/
 permalink:          /:title/
 
 # Site base hostname & protocol, e.g. http://example.com
 url:                ""
-#url:                "https://onsumaye-team.github.io"
-mainurl:                "http://127.0.0.1:4001/ido"
+mainurl:                "https://onsumaye-team.github.io"
+#mainurl:                "http://127.0.0.1:4001/ido"
 
 # Site logo # e.g. logo.png, upload logo image file to /uploads/ folder
 logo:               

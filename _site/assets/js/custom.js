@@ -151,7 +151,8 @@ jQuery(document).ready(function () {
         return true;//this.optional(element) || !(/[<>]/g.test(value));
     });
     jQuery.validator.addMethod("alphabetOnlyName", function (value, element) {
-        return this.optional(element) || value == value.match(/^[a-zA-Z-0-9 .\\-\\s]+$/);
+        //return this.optional(element) || value == value.match(/^[a-zA-Z-0-9 .\\-\\s]+$/);
+        return this.optional(element) || value == value.match(/^[a-zA-Z \s]+$/);
     });
     jQuery.validator.addMethod("check_subscribe", function (value, element) {
         if (jQuery('#agreecheck').is(':checked')) {
