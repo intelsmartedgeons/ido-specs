@@ -23,16 +23,16 @@ section:
     meta_description:
     
   - title: Interface Service
-    path: /ido-specs/doc/applications-onboard/openness-interface-service
+    path: /ido-specs/docs/applications-onboard/openness-interface-service
     meta_title:
     meta_description:
     
   - title: VM Support in Intel® Smart Edge Open for Network Edge
-    path: /ido-specs/doc/applications-onboard/openness-network-edge-vm-support
+    path: /ido-specs/docs/applications-onboard/openness-network-edge-vm-support
     meta_title: 
     meta_description: 
     
   - title: Core Network Configuration Agent  (CNCA)
-    path: /ido-specs/doc/applications-onboard/using-openness-cnca
+    path: /ido-specs/docs/applications-onboard/using-openness-cnca
     meta_title: 
     meta_description: 

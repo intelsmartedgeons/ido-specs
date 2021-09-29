@@ -5,7 +5,7 @@
       "category" : "",
       "tags"     : "features",
       "url"      : "/ideo-specs/docs/alerts/",
-      "date"     : "2021-09-29 16:23:21 +0530"
+      "date"     : "2021-09-29 16:57:38 +0530"
     } ,
   
     {
@@ -13,7 +13,7 @@
       "category" : "",
       "tags"     : "",
       "url"      : "/ideo-specs/docs/analytics/",
-      "date"     : "2021-09-29 16:23:21 +0530"
+      "date"     : "2021-09-29 16:57:38 +0530"
     } ,
   
     {
@@ -21,7 +21,7 @@
       "category" : "",
       "tags"     : "features",
       "url"      : "/ideo-specs/docs/boxes/",
-      "date"     : "2021-09-29 16:23:21 +0530"
+      "date"     : "2021-09-29 16:57:38 +0530"
     } ,
   
     {
@@ -29,7 +29,7 @@
       "category" : "",
       "tags"     : "setup",
       "url"      : "/ideo-specs/docs/changelog/",
-      "date"     : "2021-09-29 16:23:21 +0530"
+      "date"     : "2021-09-29 16:57:38 +0530"
     } ,
   
     {
@@ -37,7 +37,7 @@
       "category" : "",
       "tags"     : "",
       "url"      : "/ideo-specs/docs/comments/",
-      "date"     : "2021-09-29 16:23:21 +0530"
+      "date"     : "2021-09-29 16:57:38 +0530"
     } ,
   
     {
@@ -45,7 +45,7 @@
       "category" : "",
       "tags"     : "setup",
       "url"      : "/ideo-specs/docs/contact/",
-      "date"     : "2021-09-29 16:23:21 +0530"
+      "date"     : "2021-09-29 16:57:38 +0530"
     } ,
   
     {
@@ -53,7 +53,7 @@
       "category" : "",
       "tags"     : "features",
       "url"      : "/ideo-specs/docs/cta/",
-      "date"     : "2021-09-29 16:23:21 +0530"
+      "date"     : "2021-09-29 16:57:38 +0530"
     } ,
   
     {
@@ -61,7 +61,7 @@
       "category" : "",
       "tags"     : "customize",
       "url"      : "/ideo-specs/docs/customize/",
-      "date"     : "2021-09-29 16:23:21 +0530"
+      "date"     : "2021-09-29 16:57:38 +0530"
     } ,
   
     {
@@ -69,7 +69,7 @@
       "category" : "",
       "tags"     : "customize",
       "url"      : "/ideo-specs/docs/development/",
-      "date"     : "2021-09-29 16:23:21 +0530"
+      "date"     : "2021-09-29 16:57:38 +0530"
     } ,
   
     {
@@ -77,7 +77,7 @@
       "category" : "",
       "tags"     : "setup",
       "url"      : "/ideo-specs/docs/docs/",
-      "date"     : "2021-09-29 16:23:21 +0530"
+      "date"     : "2021-09-29 16:57:38 +0530"
     } ,
   
     {
@@ -85,7 +85,7 @@
       "category" : "",
       "tags"     : "features, featured",
       "url"      : "/ideo-specs/docs/faq/",
-      "date"     : "2021-09-29 16:23:21 +0530"
+      "date"     : "2021-09-29 16:57:38 +0530"
     } ,
   
     {
@@ -93,7 +93,7 @@
       "category" : "",
       "tags"     : "features",
       "url"      : "/ideo-specs/docs/featured/",
-      "date"     : "2021-09-29 16:23:21 +0530"
+      "date"     : "2021-09-29 16:57:38 +0530"
     } ,
   
     {
@@ -101,7 +101,15 @@
       "category" : "",
       "tags"     : "setup",
       "url"      : "/ideo-specs/docs/footer/",
-      "date"     : "2021-09-29 16:23:21 +0530"
+      "date"     : "2021-09-29 16:57:38 +0530"
+    } ,
+  
+    {
+      "title"    : "Openness Cluster Setup",
+      "category" : "",
+      "tags"     : "",
+      "url"      : "/ideo-specs/docs/getting-started/openness-cluster-setup/",
+      "date"     : "2021-09-29 16:57:38 +0530"
     } ,
   
     {
@@ -109,7 +117,7 @@
       "category" : "",
       "tags"     : "features",
       "url"      : "/ideo-specs/docs/hero/",
-      "date"     : "2021-09-29 16:23:21 +0530"
+      "date"     : "2021-09-29 16:57:38 +0530"
     } ,
   
     {
@@ -117,7 +125,7 @@
       "category" : "",
       "tags"     : "setup",
       "url"      : "/ideo-specs/docs/installation/",
-      "date"     : "2021-09-29 16:23:21 +0530"
+      "date"     : "2021-09-29 16:57:38 +0530"
     } ,
   
     {
@@ -125,7 +133,7 @@
       "category" : "",
       "tags"     : "features, featured",
       "url"      : "/ideo-specs/docs/media/",
-      "date"     : "2021-09-29 16:23:21 +0530"
+      "date"     : "2021-09-29 16:57:38 +0530"
     } ,
   
     {
@@ -133,7 +141,7 @@
       "category" : "",
       "tags"     : "setup",
       "url"      : "/ideo-specs/docs/navigation/",
-      "date"     : "2021-09-29 16:23:21 +0530"
+      "date"     : "2021-09-29 16:57:38 +0530"
     } ,
   
     {
@@ -141,7 +149,7 @@
       "category" : "",
       "tags"     : "",
       "url"      : "/ideo-specs/docs/openness_releasenotes/",
-      "date"     : "2021-09-29 16:23:21 +0530"
+      "date"     : "2021-09-29 16:57:38 +0530"
     } ,
   
     {
@@ -149,7 +157,7 @@
       "category" : "",
       "tags"     : "othertag",
       "url"      : "/ideo-specs/docs/pages/",
-      "date"     : "2021-09-29 16:23:21 +0530"
+      "date"     : "2021-09-29 16:57:38 +0530"
     } ,
   
     {
@@ -157,7 +165,7 @@
       "category" : "",
       "tags"     : "featured",
       "url"      : "/ideo-specs/docs/posts/",
-      "date"     : "2021-09-29 16:23:21 +0530"
+      "date"     : "2021-09-29 16:57:38 +0530"
     } ,
   
     {
@@ -165,7 +173,7 @@
       "category" : "",
       "tags"     : "setup",
       "url"      : "/ideo-specs/docs/setup/",
-      "date"     : "2021-09-29 16:23:21 +0530"
+      "date"     : "2021-09-29 16:57:38 +0530"
     } ,
   
     {
@@ -173,7 +181,7 @@
       "category" : "",
       "tags"     : "customize",
       "url"      : "/ideo-specs/docs/sources/",
-      "date"     : "2021-09-29 16:23:21 +0530"
+      "date"     : "2021-09-29 16:57:38 +0530"
     } ,
   
     {
@@ -181,7 +189,7 @@
       "category" : "",
       "tags"     : "help, customize",
       "url"      : "/ideo-specs/docs/support/",
-      "date"     : "2021-09-29 16:23:21 +0530"
+      "date"     : "2021-09-29 16:57:38 +0530"
     } ,
   
     {
@@ -189,7 +197,7 @@
       "category" : "",
       "tags"     : "features",
       "url"      : "/ideo-specs/docs/team/",
-      "date"     : "2021-09-29 16:23:21 +0530"
+      "date"     : "2021-09-29 16:57:38 +0530"
     } ,
   
     {
@@ -197,7 +205,7 @@
       "category" : "",
       "tags"     : "features",
       "url"      : "/ideo-specs/docs/toc/",
-      "date"     : "2021-09-29 16:23:21 +0530"
+      "date"     : "2021-09-29 16:57:38 +0530"
     } ,
   
     {
@@ -205,7 +213,7 @@
       "category" : "",
       "tags"     : "customize",
       "url"      : "/ideo-specs/docs/translation/",
-      "date"     : "2021-09-29 16:23:21 +0530"
+      "date"     : "2021-09-29 16:57:38 +0530"
     } ,
   
     {
@@ -213,7 +221,7 @@
       "category" : "",
       "tags"     : "features, featured",
       "url"      : "/ideo-specs/docs/videos/",
-      "date"     : "2021-09-29 16:23:21 +0530"
+      "date"     : "2021-09-29 16:57:38 +0530"
     } 
   
 ]

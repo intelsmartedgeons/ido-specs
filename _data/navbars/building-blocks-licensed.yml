@@ -67,21 +67,21 @@ section:
       meta_description: 
       
     - title: Topology Manager Support
-      path: /ido-specs/doc/building-blocks/enhanced-platform-awareness/openness-topology-manager
+      path: /ido-specs/docs/building-blocks/enhanced-platform-awareness/openness-topology-manager
       meta_title: 
       meta_description: 
       
     - title: Telemetry Support
-      path: /ido-specs/doc/building-blocks/enhanced-platform-awareness/openness-telemetry
+      path: /ido-specs/docs/building-blocks/enhanced-platform-awareness/openness-telemetry
       meta_title: 
       meta_description: 
       
     - title: Resource Management Daemon
-      path: /ido-specs/doc/building-blocks/enhanced-platform-awareness/openness-rmd
+      path: /ido-specs/docs/building-blocks/enhanced-platform-awareness/openness-rmd
       meta_title: 
       meta_description:
       
     - title: Edge Multi-Cluster Orchestrator
-      path: /ido-specs/doc/building-blocks/emco/openness-emco
+      path: /ido-specs/docs/building-blocks/emco/openness-emco
       meta_title:
       meta_description: 
