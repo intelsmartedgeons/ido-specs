@@ -4,224 +4,232 @@
       "title"    : "Adding alerts to content",
       "category" : "",
       "tags"     : "features",
-      "url"      : "/ideo-specs/docs/alerts/",
-      "date"     : "2021-09-29 16:57:38 +0530"
+      "url"      : "/intel-smart-edge-open/ido-specs/docs/alerts/",
+      "date"     : "2021-09-29 23:11:19 +0530"
     } ,
   
     {
       "title"    : "Google Analytics",
       "category" : "",
       "tags"     : "",
-      "url"      : "/ideo-specs/docs/analytics/",
-      "date"     : "2021-09-29 16:57:38 +0530"
+      "url"      : "/intel-smart-edge-open/ido-specs/docs/analytics/",
+      "date"     : "2021-09-29 23:11:19 +0530"
     } ,
   
     {
       "title"    : "Category boxes section",
       "category" : "",
       "tags"     : "features",
-      "url"      : "/ideo-specs/docs/boxes/",
-      "date"     : "2021-09-29 16:57:38 +0530"
+      "url"      : "/intel-smart-edge-open/ido-specs/docs/boxes/",
+      "date"     : "2021-09-29 23:11:19 +0530"
     } ,
   
     {
       "title"    : "Creating a changelog",
       "category" : "",
       "tags"     : "setup",
-      "url"      : "/ideo-specs/docs/changelog/",
-      "date"     : "2021-09-29 16:57:38 +0530"
+      "url"      : "/intel-smart-edge-open/ido-specs/docs/changelog/",
+      "date"     : "2021-09-29 23:11:19 +0530"
     } ,
   
     {
       "title"    : "Enabling comments (via Disqus)",
       "category" : "",
       "tags"     : "",
-      "url"      : "/ideo-specs/docs/comments/",
-      "date"     : "2021-09-29 16:57:38 +0530"
+      "url"      : "/intel-smart-edge-open/ido-specs/docs/comments/",
+      "date"     : "2021-09-29 23:11:19 +0530"
     } ,
   
     {
       "title"    : "Contact form (via FormSpree)",
       "category" : "",
       "tags"     : "setup",
-      "url"      : "/ideo-specs/docs/contact/",
-      "date"     : "2021-09-29 16:57:38 +0530"
+      "url"      : "/intel-smart-edge-open/ido-specs/docs/contact/",
+      "date"     : "2021-09-29 23:11:19 +0530"
     } ,
   
     {
       "title"    : "Call to action section",
       "category" : "",
       "tags"     : "features",
-      "url"      : "/ideo-specs/docs/cta/",
-      "date"     : "2021-09-29 16:57:38 +0530"
+      "url"      : "/intel-smart-edge-open/ido-specs/docs/cta/",
+      "date"     : "2021-09-29 23:11:19 +0530"
     } ,
   
     {
       "title"    : "Customization",
       "category" : "",
       "tags"     : "customize",
-      "url"      : "/ideo-specs/docs/customize/",
-      "date"     : "2021-09-29 16:57:38 +0530"
+      "url"      : "/intel-smart-edge-open/ido-specs/docs/customize/",
+      "date"     : "2021-09-29 23:11:19 +0530"
     } ,
   
     {
       "title"    : "Development",
       "category" : "",
       "tags"     : "customize",
-      "url"      : "/ideo-specs/docs/development/",
-      "date"     : "2021-09-29 16:57:38 +0530"
+      "url"      : "/intel-smart-edge-open/ido-specs/docs/development/",
+      "date"     : "2021-09-29 23:11:19 +0530"
     } ,
   
     {
       "title"    : "Creating docs posts",
       "category" : "",
       "tags"     : "setup",
-      "url"      : "/ideo-specs/docs/docs/",
-      "date"     : "2021-09-29 16:57:38 +0530"
+      "url"      : "/intel-smart-edge-open/ido-specs/docs/docs/",
+      "date"     : "2021-09-29 23:11:19 +0530"
     } ,
   
     {
       "title"    : "Frequently asked questions section",
       "category" : "",
       "tags"     : "features, featured",
-      "url"      : "/ideo-specs/docs/faq/",
-      "date"     : "2021-09-29 16:57:38 +0530"
+      "url"      : "/intel-smart-edge-open/ido-specs/docs/faq/",
+      "date"     : "2021-09-29 23:11:19 +0530"
     } ,
   
     {
       "title"    : "Fearured docs section",
       "category" : "",
       "tags"     : "features",
-      "url"      : "/ideo-specs/docs/featured/",
-      "date"     : "2021-09-29 16:57:38 +0530"
+      "url"      : "/intel-smart-edge-open/ido-specs/docs/featured/",
+      "date"     : "2021-09-29 23:11:19 +0530"
     } ,
   
     {
       "title"    : "Footer options",
       "category" : "",
       "tags"     : "setup",
-      "url"      : "/ideo-specs/docs/footer/",
-      "date"     : "2021-09-29 16:57:38 +0530"
+      "url"      : "/intel-smart-edge-open/ido-specs/docs/footer/",
+      "date"     : "2021-09-29 23:11:19 +0530"
+    } ,
+  
+    {
+      "title"    : "Converged Edge Experience Kits",
+      "category" : "",
+      "tags"     : "",
+      "url"      : "/intel-smart-edge-open/ido-specs/docs/getting-started/converged-edge-experience-kits/",
+      "date"     : "2021-09-29 23:11:19 +0530"
     } ,
   
     {
       "title"    : "Openness Cluster Setup",
       "category" : "",
       "tags"     : "",
-      "url"      : "/ideo-specs/docs/getting-started/openness-cluster-setup/",
-      "date"     : "2021-09-29 16:57:38 +0530"
+      "url"      : "/intel-smart-edge-open/ido-specs/docs/getting-started/openness-cluster-setup/",
+      "date"     : "2021-09-29 23:11:19 +0530"
     } ,
   
     {
       "title"    : "Hero page header",
       "category" : "",
       "tags"     : "features",
-      "url"      : "/ideo-specs/docs/hero/",
-      "date"     : "2021-09-29 16:57:38 +0530"
+      "url"      : "/intel-smart-edge-open/ido-specs/docs/hero/",
+      "date"     : "2021-09-29 23:11:19 +0530"
     } ,
   
     {
       "title"    : "Theme installation",
       "category" : "",
       "tags"     : "setup",
-      "url"      : "/ideo-specs/docs/installation/",
-      "date"     : "2021-09-29 16:57:38 +0530"
+      "url"      : "/intel-smart-edge-open/ido-specs/docs/installation/",
+      "date"     : "2021-09-29 23:11:19 +0530"
     } ,
   
     {
       "title"    : "Adding media to post and doc content",
       "category" : "",
       "tags"     : "features, featured",
-      "url"      : "/ideo-specs/docs/media/",
-      "date"     : "2021-09-29 16:57:38 +0530"
+      "url"      : "/intel-smart-edge-open/ido-specs/docs/media/",
+      "date"     : "2021-09-29 23:11:19 +0530"
     } ,
   
     {
       "title"    : "Navigation bar",
       "category" : "",
       "tags"     : "setup",
-      "url"      : "/ideo-specs/docs/navigation/",
-      "date"     : "2021-09-29 16:57:38 +0530"
+      "url"      : "/intel-smart-edge-open/ido-specs/docs/navigation/",
+      "date"     : "2021-09-29 23:11:19 +0530"
     } ,
   
     {
       "title"    : "Openness_releasenotes",
       "category" : "",
       "tags"     : "",
-      "url"      : "/ideo-specs/docs/openness_releasenotes/",
-      "date"     : "2021-09-29 16:57:38 +0530"
+      "url"      : "/intel-smart-edge-open/ido-specs/docs/openness_releasenotes/",
+      "date"     : "2021-09-29 23:11:19 +0530"
     } ,
   
     {
       "title"    : "Updating your billing credit card",
       "category" : "",
       "tags"     : "othertag",
-      "url"      : "/ideo-specs/docs/pages/",
-      "date"     : "2021-09-29 16:57:38 +0530"
+      "url"      : "/intel-smart-edge-open/ido-specs/docs/pages/",
+      "date"     : "2021-09-29 23:11:19 +0530"
     } ,
   
     {
       "title"    : "Creating your first post in Jekyll",
       "category" : "",
       "tags"     : "featured",
-      "url"      : "/ideo-specs/docs/posts/",
-      "date"     : "2021-09-29 16:57:38 +0530"
+      "url"      : "/intel-smart-edge-open/ido-specs/docs/posts/",
+      "date"     : "2021-09-29 23:11:19 +0530"
     } ,
   
     {
       "title"    : "Basic theme setup",
       "category" : "",
       "tags"     : "setup",
-      "url"      : "/ideo-specs/docs/setup/",
-      "date"     : "2021-09-29 16:57:38 +0530"
+      "url"      : "/intel-smart-edge-open/ido-specs/docs/setup/",
+      "date"     : "2021-09-29 23:11:19 +0530"
     } ,
   
     {
       "title"    : "Sources and credits",
       "category" : "",
       "tags"     : "customize",
-      "url"      : "/ideo-specs/docs/sources/",
-      "date"     : "2021-09-29 16:57:38 +0530"
+      "url"      : "/intel-smart-edge-open/ido-specs/docs/sources/",
+      "date"     : "2021-09-29 23:11:19 +0530"
     } ,
   
     {
       "title"    : "Contacting support",
       "category" : "",
       "tags"     : "help, customize",
-      "url"      : "/ideo-specs/docs/support/",
-      "date"     : "2021-09-29 16:57:38 +0530"
+      "url"      : "/intel-smart-edge-open/ido-specs/docs/support/",
+      "date"     : "2021-09-29 23:11:19 +0530"
     } ,
   
     {
       "title"    : "Team members section",
       "category" : "",
       "tags"     : "features",
-      "url"      : "/ideo-specs/docs/team/",
-      "date"     : "2021-09-29 16:57:38 +0530"
+      "url"      : "/intel-smart-edge-open/ido-specs/docs/team/",
+      "date"     : "2021-09-29 23:11:19 +0530"
     } ,
   
     {
       "title"    : "Adding table of contents to docs",
       "category" : "",
       "tags"     : "features",
-      "url"      : "/ideo-specs/docs/toc/",
-      "date"     : "2021-09-29 16:57:38 +0530"
+      "url"      : "/intel-smart-edge-open/ido-specs/docs/toc/",
+      "date"     : "2021-09-29 23:11:19 +0530"
     } ,
   
     {
       "title"    : "Translation",
       "category" : "",
       "tags"     : "customize",
-      "url"      : "/ideo-specs/docs/translation/",
-      "date"     : "2021-09-29 16:57:38 +0530"
+      "url"      : "/intel-smart-edge-open/ido-specs/docs/translation/",
+      "date"     : "2021-09-29 23:11:19 +0530"
     } ,
   
     {
       "title"    : "Video lightbox boxes section",
       "category" : "",
       "tags"     : "features, featured",
-      "url"      : "/ideo-specs/docs/videos/",
-      "date"     : "2021-09-29 16:57:38 +0530"
+      "url"      : "/intel-smart-edge-open/ido-specs/docs/videos/",
+      "date"     : "2021-09-29 23:11:19 +0530"
     } 
   
 ]
