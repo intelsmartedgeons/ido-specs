@@ -125,18 +125,3 @@ collections:
     output:         false
   changelogs:
     output:         false
-
-# Defaults
-defaults:
-  # _posts
-  - scope:
-      path:         ""
-      type:         posts
-    values:
-      layout:       doc
-  # _docs
-  - scope:
-      path:         ""
-      type:         docs
-    values:
-      layout:       doc
