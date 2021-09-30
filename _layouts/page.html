@@ -1,7 +1,9 @@
-
+---
+layout: default
+---
 
 {% if page.width == 'expand' %}
-    {{ content }}
+<div style="display:none;">{{ content }}</div>
 {% else %}
 <div class="uk-section">
     <div class="uk-container{% if page.width %} uk-container-{{page.width}}{% endif %}">
