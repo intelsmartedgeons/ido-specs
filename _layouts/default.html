@@ -5,7 +5,13 @@
 
     <body>
 
-    {% include navbar.html %}
+    {% if page.hero %}
+        {% include hero.html %}
+    {% else %}
+        {% include navbar.html %}
+    {% endif %}
+    
+    {% include doc.html %}
 
     {{ content }}
 
