@@ -6,17 +6,19 @@
 
 # Site title and description
 title:              Docs
-description:        Documentation Jekyll theme.
+description:        Documentation Jekyll theme .
 lang:               en
 
 # Site subpath, e.g. /blog
-baseurl:            ""
+baseurl:            "/ido-specs"
 
 # Permalink URLs structure, for permalink style options see: https://jekyllrb.com/docs/permalinks/
 permalink:          /:title/
 
 # Site base hostname & protocol, e.g. http://example.com
 url:                ""
+
+main_url:           "https://onsumaye-team.github.io"
 
 # Site logo # e.g. logo.png, upload logo image file to /uploads/ folder
 logo:               
