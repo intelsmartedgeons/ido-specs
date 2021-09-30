@@ -18,7 +18,7 @@ section:
       meta_description: 
       
     - title: Hugepage Support
-      path:  /ido-specs/doc/building-blocks/enhanced-platform-awareness/openness-hugepage.md
+      path:  /ido-specs/doc/building-blocks/enhanced-platform-awareness/openness-hugepage
       meta_title: 
       meta_description:
       
