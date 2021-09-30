@@ -133,7 +133,7 @@ defaults:
       path:         ""
       type:         posts
     values:
-      layout:       post
+      layout:       doc
   # _docs
   - scope:
       path:         ""
