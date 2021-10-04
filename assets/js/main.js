@@ -9624,26 +9624,18 @@ jQuery(document).ready(function() {
 function cleanString(str) {
     return str.replace(/[^A-Za-z0-9,_()&reg;.-:{}$%@!~=+'&#39;`? ]/g, "");
 }
-jQuery(document).on('click', function(event){
-    var className = event.target.className;
-    var nodeName = event.target.nodeName;
-    console.log(className); 
-    console.log(nodeName); 
-    console.log(event);
-    if(event.target.parentNode.className == 'uk-icon uk-navbar-toggle-icon' || event.target.className == 'uk-margin-small-left'){
-        jQuery('.uk-navbar-toggle').attr('aria-expanded', true);
-    }
-    else if (className == 'uk-offcanvas uk-offcanvas-overlay uk-togglabe-leave'){
-        jQuery('.uk-navbar-toggle').attr('aria-expanded', false);
-        console.log('menu close by outside')
-    }
-    else{
-        jQuery('.uk-navbar-toggle').attr('aria-expanded', false);
-        console.log('menu close')
-    }
-})
-jQuery(document).ready(function(){
-    jQuery('.uk-navbar-container .uk-navbar-left .uk-navbar-nav li a').on('click', function(){
-        jQuery('#offcanvas-docs').removeClass('uk-offcanvas-overlay uk-open');
-    })
+
+jQuery(window).on('load', function(){
+    jQuery('.menuIcon').on('click', function(){
+         jQuery(this).parent('.toggleMenu').toggleClass('showMenu')
+     })
+     var pathname = window.location.pathname;
+     if(pathname.includes('/docs/')){
+ jQuery('.uk-navbar-container .uk-navbar-left .uk-navbar-nav li a[href="'+pathname+'"]').parent('li').addClass('uk-active');
+     }
+ })
+ jQuery(window).on('resize', function(){
+     if(jQuery(window).width() >= 960){
+         jQuery('#offcanvas-docs').removeClass('uk-offcanvas-overlay uk-open');
+     }
 })
