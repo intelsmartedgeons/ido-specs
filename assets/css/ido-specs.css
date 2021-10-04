@@ -262,10 +262,10 @@
  #footer .footer-link>ul>li,#footer .footer-link>ul>li>.separator,#footer .footer-link>ul>li>a{font-size:16px}
  #footer .footer-link>ul>li:first-child:after{display:none}
  #footer .footer-link>ul>li:first-child{display:block;text-align:center}
- .container .leftSection .searchBar-section .popover { max-width: 95%; max-height: 57vh; overflow: auto;}
  }
  @media (max-width:767px) {
  .menubar{top:45px}
+ .container .leftSection .searchBar-section .popover{max-width:100%}
  }
  @media (min-width:769px) {
  .menubar li:hover>ul{display:block!important;position:absolute}
