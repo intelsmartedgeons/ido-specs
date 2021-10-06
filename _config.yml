@@ -18,7 +18,7 @@ permalink:          /:title/
 # Site base hostname & protocol, e.g. http://example.com
 url:                ""
 
-main_url:           "https://smart-edge-open.github.io"
+main_url:           "https://onsumaye-team.github.io"
 
 # Site logo # e.g. logo.png, upload logo image file to /uploads/ folder
 logo:               
@@ -60,11 +60,52 @@ authors:
       title:        Developer     
       avatar:       avatar-tom.png
 
+# Social icons displayed in footer
+social:
+    email:
+    website:
+    facebook:       https://www.facebook.com/
+    flickr:
+    dribbble:
+    github:
+    googleplus:
+    instagram:      https://www.instagram.com/
+    linkedin:
+    pinterest:
+    twitter:        https://twitter.com/
+    vimeo:          https://vimeo.com/
+    youtube:
+
+# Share button
+share:
+    post:           true # Display share buttons on a post page
+    doc:            true # Display share buttons on a doc page
+    twitter:        username # Enable by adding Twitter handle 
+    facebook:       true # Enable by setting true (Facebook handle not required)
+
+# Default footer image settings
+footer:
+    copyright:      Made by <a href="https://unbound.studio/">Unbound Studio</a> in Cleveland.
+
+# Disqus comments shortname, requires Disqus account https://disqus.com/
+disqus:
+    shortname:      # 1234
+
 # Google analytics code, get your code here https://www.google.com/analytics/
 google_analytics: true
 
+# Number of posts displayed on blog page
+paginate:           10
+
+# Blog path
+paginate_path:      "/blog/:num/"
+
 # Path to post content assets directory i.e post images, pdfs etc
 uploads:            /uploads/
+
+# Build settings
+markdown:           kramdown
+highlighter:        rouge
 
 gems:
   - jekyll-feed
