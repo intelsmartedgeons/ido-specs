@@ -49,7 +49,7 @@
                         }else{
                             base_url = base_url + "/doc";
                             if(url.startsWith("../../") == true){
-                                url = url.replace(".../../", "/");
+                                url = url.replace("../../", "");
                             }
                             new_url = (url.startsWith("/") == true)?base_url+url:base_url+"/"+url;
                         }
