@@ -47,6 +47,7 @@
                         if(typeof checkImage[0] != 'undefined' && checkImage[0] == 'images'){
                             new_url = jQuery(this).children("img").attr("src");
                         }else{
+                            base_url = base_url + "/doc";
                             new_url = (url.startsWith("/") == true)?base_url+url:base_url+"/"+url;
                         }
                         console.log(url);
