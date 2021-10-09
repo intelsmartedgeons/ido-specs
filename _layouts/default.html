@@ -48,12 +48,12 @@
                             new_url = jQuery(this).children("img").attr("src");
                         }else{
                             base_url = base_url + "/doc";
+                            console.log(url);
                             if(url.startsWith("../../") == true){
                                 url = url.replace("../../", "");
                             }
                             new_url = (url.startsWith("/") == true)?base_url+url:base_url+"/"+url;
                         }
-                        console.log(new_url);
                         jQuery(this).attr('href',new_url);
                     }else{
                         if(hashCheck != '-1'){
