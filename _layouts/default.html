@@ -51,6 +51,11 @@
                         }
                         console.log(new_url);
                         jQuery(this).attr('href',new_url);
+                    }else{
+                        if(hashCheck != '-1'){
+                            //Remove .md From href
+                            jQuery(this).attr('href', url.replace(".md", "/"));
+                        }
                     }
                 }
             });
