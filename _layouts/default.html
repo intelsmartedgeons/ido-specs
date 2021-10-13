@@ -39,6 +39,7 @@
                     var httpsUrl = url.indexOf('https://');
                     var hashCheck = url.indexOf('#');
                     if(urlFound == '-1' && httpUrl == '-1' && httpsUrl == '-1' && hashCheck == '-1'){
+                        console.log("Hi");
                         //Check Image
                         var checkImage = url.split('/');
                         //Remove .md From href
@@ -51,11 +52,12 @@
                                 url = url.replace("../../", "");
                             }
                             new_url = (url.startsWith("/") == true)?base_url+"/doc"+url:base_url+"/doc/"+url;
-                            console.log(new_url);
                         }
+                        console.log(new_url);
                         jQuery(this).attr('href',new_url);
                     }else{
-                        if(hashCheck != '-1'){
+                        if(httpUrl == '-1' && httpsUrl == '-1' && hashCheck != '-1'){
+                            console.log("Bye");
                             //Remove .md From href
                             jQuery(this).attr('href', url.replace(".md", "/"));
                         }
