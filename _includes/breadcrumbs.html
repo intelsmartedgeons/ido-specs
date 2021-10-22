@@ -20,9 +20,9 @@
   {% endcomment %}
 {% endfor %}
 {% assign navbars = navigations | sort:"order" %}
-{{ navbars }}
 
 {% assign title = page.name | replace: "-"," " | replace: "_"," " | split: ".md" | first %}
+{{ title }}
 {% assign pageTitle = title | split: ' ' %}
 {% capture pageTitleUpper %}{% for word in pageTitle %}{{ word | capitalize }} {% endfor %}{% endcapture %}
 <div id="breadcrumbs">
