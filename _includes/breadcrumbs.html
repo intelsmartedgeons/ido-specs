@@ -32,7 +32,9 @@
     {% for navbar in navbars %}
       {% for breadcrumb in navbar.section %}
         {% assign crumbs = breadcrumb.path | split: '/' %}
-        {{ crumbs }}
+        {% for crumb in crumbs offset: 1 %}
+          {{ crumb }}
+        {% endfor %}
         {% comment %}
         {% assign cur_path = breadcrumb.path | append:'/' %}
         {% if pagePath == cur_path %}
