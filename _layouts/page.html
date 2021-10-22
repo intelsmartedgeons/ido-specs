@@ -10,40 +10,7 @@ layout: default
             <h1 class="uk-article-title">{{ page.title | escape }}</h1>
 
             <div class="article-content link-primary">
-                {% assign pageName = page.path | split: "/" %}
-                {{ pageName }}
-                {% if pageName[1] %}
-                {% assign pageName = pageName[1] | prepend: "/" | append: "/" | replace: ".md","" %}
-                {% else %}
-                {% assign pageName = pageName[0] | prepend: "/" | append: "/" | replace: ".md","" %}
-                {% endif %}
-
-                {% assign navigations = "" | split:"|" %}
-                {% for navbars_data in site.data.navbars %}
-                {% assign nav = navbars_data[1] %}
-                {% assign navigations = navigations | push: nav %}
-                {% if pageName == nav.path %}
-                    {% assign this_pages_navbar = nav %}
-                    {% else %}
-                    {% assign not_this_page = nav %}
-                {% endif %}
-                {% endfor %}
-                {% assign navbars = navigations | sort:"order" %}
-
-                {% assign title = page.name | replace: "-"," " | replace: "_"," " | split: ".md" | first %}
-                {% assign pageTitle = title | split: ' ' %}
-                {% capture pageTitleUpper %}{% for word in pageTitle %}{{ word | capitalize }} {% endfor %}{% endcapture %}
-
-                <div class="rightHead" style="display: none;">
-                    <div class="breadcrumbList pull-left">
-                      <a href="{{ site.baseurl | append: "/" }}" class="noCrossRef productSubtitle"> Home </a>
-                      {% if pageTitleUpper != 'index.html' %}
-                          {% for navbar in navbars %}
-                              {% include breadcrumbs.html section=navbar.section %}
-                          {% endfor %}
-                      {% endif %}
-                    </div>
-                </div>
+                {% include breadcrumbs.html %}
 
                 {{ content }}
             </div>
