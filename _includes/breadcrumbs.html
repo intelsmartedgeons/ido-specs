@@ -1,16 +1,18 @@
----
-
----
+{% assign pageName = page.path | split: "/" %}
+{% if pageName[1] %}
+{% assign pageName = pageName[1] | prepend: "/" | append: "/" | replace: ".md","" %}
+{% else %}
+{% assign pageName = pageName[0] | prepend: "/" | append: "/" | replace: ".md","" %}
+{% endif %}
+{{ pageName }}
 <div id="breadcrumbs">
-  {% assign pageName = page.path | split: "/" %}
-  {{ pageName }}
-  {% assign crumbs = page.path | remove:'/index.html' | split: '/' %}
+  {% assign crumbs = page.url | remove:'/index.html' | split: '/' %}
   <a href="/">Home</a>
   {% for crumb in crumbs offset: 1 %}
     {% if forloop.last %}
       / {{ page.title }}
     {% else %}
-      / <a href="{% assign crumb_limit = forloop.index | plus: 1 %}{% for crumb in crumbs limit: crumb_limit %}{{ crumb | append: '/' | replace:'without-plugin/','without-plugins/' }}{% endfor %}">{{ crumb | replace:'-',' ' | remove:'.html' | capitalize }}</a>
+      / <a href="{% assign crumb_limit = forloop.index | plus: 1 %}{% for crumb in crumbs limit: crumb_limit %}{{ crumb | append: '/' }}{% endfor %}">{{ crumb | replace:'-',' ' | remove:'.html' | capitalize }}</a>
     {% endif %}
   {% endfor %}
 </div>
