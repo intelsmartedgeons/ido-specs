@@ -26,7 +26,12 @@
   {% if pageTitleUpper != 'index.html' %}
     {% for navbar in navbars %}
       {% assign pagePath = page.path | remove: ".md" | prepend: "/" %}
-      {{ pagePath }}
+      {% if navbar.section %}
+      {% else %}
+        {% if pagePath == navbar.path %}
+          > {{ navbar.title }}
+        {% endif %}
+      {% endif %}
     {% endfor %}
   {% endif %}
 
