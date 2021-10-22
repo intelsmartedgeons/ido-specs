@@ -27,15 +27,8 @@
     {% assign pagePath = page.path | remove: ".md" | prepend: "/" %}
     {% for navbar in navbars %}
       {% for breadcrumb in navbar.section %}
-        {% if site.baseurl == '/ido-specs' %}
-          {{ breadcrumb.path }}
-          {% if pagePath == breadcrumb.path | prepend:site.baseurl | append:'/' %}
-            > {{ breadcrumb.title }}
-          {% endif %}
-        {% else %}
-          {% if pagePath == breadcrumb.path %}
-            > {{ breadcrumb.title }}
-          {% endif %}
+        {% if pagePath == breadcrumb.path | append:'/' %}
+          > {{ breadcrumb.title }}
         {% endif %}
       {% endfor %}
     {% endfor %}
