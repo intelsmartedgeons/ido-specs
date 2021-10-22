@@ -24,22 +24,23 @@
 {% assign title = page.name | replace: "-"," " | replace: "_"," " | split: ".md" | first %}
 {% assign pageTitle = title | split: ' ' %}
 {% capture pageTitleUpper %}{% for word in pageTitle %}{{ word | capitalize }} {% endfor %}{% endcapture %}
-{{ pageTitleUpper }}
 <div id="breadcrumbs">
   {% assign crumbs = page.url | remove:'/index.html' | split: '/' %}
   <a href="{{ site.main_url }}">Home</a>
   {% if pageTitleUpper != 'index.html' %}
     {% assign pagePath = page.path | remove: ".md" | prepend:"/" | prepend: site.baseurl | append:'/' %}
-    {% comment %}
     {% for navbar in navbars %}
       {% for breadcrumb in navbar.section %}
+        {% assign crumbs = breadcrumb.path | split: '/' %}
+        {{ crumbs }}
+        {% comment %}
         {% assign cur_path = breadcrumb.path | append:'/' %}
         {% if pagePath == cur_path %}
           > {{ breadcrumb.title }}
         {% endif %}
+        {% endcomment %}
       {% endfor %}
     {% endfor %}
-    {% endcomment %}
   {% endif %}
 
   {% comment %}
