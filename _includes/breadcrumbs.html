@@ -8,10 +8,10 @@
 {% endcomment %}
 
 {% assign navigations = "" | split:"|" %}
-{{ navigations }}
 {% for navbars_data in site.data.navbars %}
 {% assign nav = navbars_data[1] %}
 {% assign navigations = navigations | push: nav %}
+{{ navigations }}
 {% if pageName == nav.path %}
     {% assign this_pages_navbar = nav %}
     {% else %}
