@@ -4,7 +4,19 @@
 {% else %}
 {% assign pageName = pageName[0] | prepend: "/" | append: "/" | replace: ".md","" %}
 {% endif %}
-{{ pageName }}
+
+{% assign navigations = "" | split:"|" %}
+{% for navbars_data in site.data.navbars %}
+{% assign nav = navbars_data[1] %}
+{% assign navigations = navigations | push: nav %}
+{% if pageName == nav.path %}
+    {% assign this_pages_navbar = nav %}
+    {% else %}
+    {% assign not_this_page = nav %}
+{% endif %}
+{% endfor %}
+{% assign navbars = navigations | sort:"order" %}
+{{ navbars }}
 <div id="breadcrumbs">
   {% assign crumbs = page.url | remove:'/index.html' | split: '/' %}
   <a href="/">Home</a>
