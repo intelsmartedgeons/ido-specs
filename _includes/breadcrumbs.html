@@ -40,7 +40,7 @@
             > {{ breadcrumb.title }}
           {% endcomment %}
           {% for crumb in crumbs offset: 1 %}
-            {{ forloop.first }}
+            {{ forloop.index }}
           {% endfor %}
         {% endif %}
         
