@@ -16,10 +16,21 @@
 {% endif %}
 {% endfor %}
 {% assign navbars = navigations | sort:"order" %}
-{{ navbars }}
+
+{% assign title = page.name | replace: "-"," " | replace: "_"," " | split: ".md" | first %}
+{% assign pageTitle = title | split: ' ' %}
+{% capture pageTitleUpper %}{% for word in pageTitle %}{{ word | capitalize }} {% endfor %}{% endcapture %}
 <div id="breadcrumbs">
   {% assign crumbs = page.url | remove:'/index.html' | split: '/' %}
-  <a href="/">Home</a>
+  <a href="{{ site.main_url }}">Home</a>
+  {% if pageTitleUpper != 'index.html' %}
+    {% for navbar in navbars %}
+      {% assign pagePath = page.path | remove: ".md" | prepend: "/" %}
+      {{ pagePath }}
+    {% endfor %}
+  {% endif %}
+
+  {% comment %}
   {% for crumb in crumbs offset: 1 %}
     {% if forloop.last %}
       / {{ page.title }}
@@ -27,4 +38,5 @@
       / <a href="{% assign crumb_limit = forloop.index | plus: 1 %}{% for crumb in crumbs limit: crumb_limit %}{{ crumb | append: '/' }}{% endfor %}">{{ crumb | replace:'-',' ' | remove:'.html' | capitalize }}</a>
     {% endif %}
   {% endfor %}
+  {% endcomment %}
 </div>
