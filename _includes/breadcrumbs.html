@@ -24,10 +24,10 @@
   {% assign crumbs = page.url | remove:'/index.html' | split: '/' %}
   <a href="{{ site.main_url }}">Home</a>
   {% if pageTitleUpper != 'index.html' %}
+    {{ site.baseurl }}
     {% assign pagePath = page.path | remove: ".md" | prepend: "/" %}
     {% for navbar in navbars %}
       {% for breadcrumb in navbar.section %}
-        {{ breadcrumb.path }}
         {% if pagePath == breadcrumb.path %}
           > {{ breadcrumb.title }}
         {% endif %}
