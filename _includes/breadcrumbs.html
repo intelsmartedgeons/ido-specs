@@ -27,6 +27,8 @@
     {% assign pagePath = page.path | remove: ".md" | prepend: "/" %}
     {% for navbar in navbars %}
       {% for breadcrumb in navbar.section %}
+        {% assign cur_path = breadcrumb.path | append:'/' %}
+        {{ cur_path }}
         {% if pagePath == breadcrumb.path | append:'/' %}
           > {{ breadcrumb.title }}
         {% endif %}
