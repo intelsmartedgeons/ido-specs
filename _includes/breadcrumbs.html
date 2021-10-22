@@ -28,8 +28,7 @@
     {% for navbar in navbars %}
       {% for breadcrumb in navbar.section %}
         {% if site.baseurl == '/ido-specs' %}
-          {% assign cur_path = breadcrumb.path | prepend:site.baseurl %}
-          {{ cur_path }}
+          {{ breadcrumb.path }}
           {% if pagePath == breadcrumb.path | prepend:site.baseurl | append:'/' %}
             > {{ breadcrumb.title }}
           {% endif %}
