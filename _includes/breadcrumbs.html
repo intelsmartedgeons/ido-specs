@@ -26,7 +26,11 @@
   {% if pageTitleUpper != 'index.html' %}
     {% assign pagePath = page.path | remove: ".md" | prepend: "/" %}
     {% for navbar in navbars %}
-    {{ navbar }}
+      {% for breadcrumb in navbar.section %}
+        {% if pagePath == breadcrumb.path %}
+          > {{ breadcrumb.title }}
+        {% endif %}
+      {% endfor %}
     {% endfor %}
   {% endif %}
 
