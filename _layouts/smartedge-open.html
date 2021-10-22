@@ -4,7 +4,7 @@ Copyright (c) 2020 Intel Corporation
 -->
 
 {%- assign pageName = page.path | split: "/"  -%}
-
+{{ pageName }}
 {%- if pageName[1] -%}
 {%- assign pageName = pageName[1] | prepend: "/" | append: "/" | replace: ".md","" -%}
 {%- else -%}
