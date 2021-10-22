@@ -1,24 +1,26 @@
 {% comment %}
 {% assign pageName = page.path | split: "/" %}
 {% if pageName[1] %}
-{% assign pageName = pageName[1] | prepend: "/" | append: "/" | replace: ".md","" %}
+  {% assign pageName = pageName[1] | prepend: "/" | append: "/" | replace: ".md","" %}
 {% else %}
-{% assign pageName = pageName[0] | prepend: "/" | append: "/" | replace: ".md","" %}
+  {% assign pageName = pageName[0] | prepend: "/" | append: "/" | replace: ".md","" %}
 {% endif %}
 {% endcomment %}
 
 {% assign navigations = "" | split:"|" %}
 {% for navbars_data in site.data.navbars %}
-{% assign nav = navbars_data[1] %}
-{% assign navigations = navigations | push: nav %}
-{{ navigations }}
-{% if pageName == nav.path %}
+  {% assign nav = navbars_data[1] %}
+  {% assign navigations = navigations | push: nav %}
+  {% comment %}
+  {% if pageName == nav.path %}
     {% assign this_pages_navbar = nav %}
     {% else %}
     {% assign not_this_page = nav %}
-{% endif %}
+  {% endif %}
+  {% endcomment %}
 {% endfor %}
 {% assign navbars = navigations | sort:"order" %}
+{{ navbars }}
 
 {% assign title = page.name | replace: "-"," " | replace: "_"," " | split: ".md" | first %}
 {% assign pageTitle = title | split: ' ' %}
