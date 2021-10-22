@@ -28,7 +28,7 @@
     {% for navbar in navbars %}
       {% for breadcrumb in navbar.section %}
         {% assign cur_path = breadcrumb.path | append:'/' %}
-        {{ cur_path }}
+        {{ pagePath }}
         {% if pagePath == breadcrumb.path | append:'/' %}
           > {{ breadcrumb.title }}
         {% endif %}
