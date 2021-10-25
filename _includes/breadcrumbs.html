@@ -20,10 +20,11 @@
   {% endcomment %}
 {% endfor %}
 {% assign navbars = navigations | sort:"order" %}
-{{ navbars }}
+
 {% assign title = page.name | replace: "-"," " | replace: "_"," " | split: ".md" | first %}
 {% assign pageTitle = title | split: ' ' %}
 {% capture pageTitleUpper %}{% for word in pageTitle %}{{ word | capitalize }} {% endfor %}{% endcapture %}
+{{ pageTitleUpper }}
 <div id="breadcrumbs">
   {% assign crumbs = page.url | remove:'/index.html' | split: '/' %}
   <a href="{{ site.main_url }}">Home</a>
