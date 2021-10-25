@@ -43,9 +43,8 @@
               {% if forloop.last %}
                 > {{ breadcrumb.title }}
               {% else %}
-                {% assign new_index = forloop.index | plus: 2 %}
-                {{ new_index }} | {{ forloop.index }}
-                {% if new_index >= forloop.index %}
+                {% if forloop.index >= 2 %}
+                {{ forloop.index }}
                 > <a href="{% assign crumb_limit = forloop.index | plus: 2 %}{% for crumb in crumbs limit: crumb_limit %}{{ crumb | append: '/' }}{% endfor %}">{{ crumb | replace:'-',' ' | remove:'.html' | capitalize }}</a>
                 {% endif %}
               {% endif %}
