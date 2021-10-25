@@ -20,7 +20,7 @@
   {% endcomment %}
 {% endfor %}
 {% assign navbars = navigations | sort:"order" %}
-
+{{ navbars }}
 {% assign title = page.name | replace: "-"," " | replace: "_"," " | split: ".md" | first %}
 {% assign pageTitle = title | split: ' ' %}
 {% capture pageTitleUpper %}{% for word in pageTitle %}{{ word | capitalize }} {% endfor %}{% endcapture %}
@@ -39,8 +39,10 @@
           {% comment %}
             > {{ breadcrumb.title }}
           {% endcomment %}
-          {% for crumb in crumbs offset: -2 %}
-            {{ forloop.index }}
+          {% for crumb in crumbs offset: 1 %}
+            {% if site.baseurl == 'ido-specs' %}
+            {% else %}
+            {% endif %}
           {% endfor %}
         {% endif %}
         
