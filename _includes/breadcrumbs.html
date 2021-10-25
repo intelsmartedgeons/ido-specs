@@ -15,7 +15,7 @@
     {% assign pagePath = page.path | remove: ".md" | prepend:"/" | prepend: site.baseurl | append:'/' %}
     {% for navbar in navbars %}
       {% for breadcrumb in navbar.section %}
-      
+
         {% assign crumbs = breadcrumb.path | remove:'/index.html' | split: '/' %}
         {% assign cur_path = breadcrumb.path | append:'/' %}
         {% if pagePath == cur_path %}
@@ -23,13 +23,20 @@
             {% if site.baseurl == '/ido-specs' %}
               {% if forloop.last %}
                 > {{ breadcrumb.title }}
+              {% elsif forloop.first %}
+              
+              {% comment %}
               {% else %}
-                {% if forloop.index >= 2 %}
+              {% endcomment %}
+                > <a href="{{ site.main_url | append: '/docs/product-overview/' }}">{{ 'Documentation' }}</a>
+
                 {% comment %}
+                {% if forloop.index >= 2 %}
                   {% assign crumb_main = crumb %}{% assign crumb_limit = forloop.index | plus: 1 %}{% for crumb in crumbs limit: crumb_limit %}{% if forloop.index > 2 %}{% if crumb_main == 'doc' %}{{ site.main_url | append: '/docs/product-overview/' }}{% else %}{% if forloop.index > 3 %}{{ breadcrumb.path | append: '/' }}{% endif %}{% endif %}{% endif %}{% endfor %}
-                {% endcomment %}
                 > <a href="{% assign crumb_main = crumb %}{% assign crumb_limit = forloop.index | plus: 1 %}{% for crumb in crumbs limit: crumb_limit %}{% if forloop.index > 2 %}{% if crumb_main == 'doc' %}{{ site.main_url | append: '/docs/product-overview/' }}{% else %}{% if forloop.index > 3 %}{{ breadcrumb.path | append: '/' }}{% endif %}{% endif %}{% endif %}{% endfor %}">{% if crumb == 'doc' %}{{ 'Documentation' }}{% else %}{{ crumb | replace:'-',' ' | remove:'.html' | capitalize }}{% endif %}</a>
                 {% endif %}
+                {% endcomment %}
+
               {% endif %}
             {% endif %}
           {% endfor %}
