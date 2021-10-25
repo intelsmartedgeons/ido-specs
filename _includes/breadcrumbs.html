@@ -26,11 +26,13 @@
                 {% if forloop.index >= 2 %}
                   {% assign crumb_limit = forloop.index | plus: 2 %}
                   {% for crumb in crumbs limit: crumb_limit %}
+                    {% comment %}
                     {% if crumb == 'doc' %}
                       {{ site.main_url | append: '/docs/product-overview/' }}
                     {% else %}
                       {{ crumb | append: '/' }}
                     {% endif %}
+                    {% endcomment %}
                   {% endfor %}
                 > <a href="#">{{ crumb | replace:'-',' ' | remove:'.html' | capitalize }}</a>
                 {% endif %}
