@@ -1,23 +1,7 @@
-{% comment %}
-{% assign pageName = page.path | split: "/" %}
-{% if pageName[1] %}
-  {% assign pageName = pageName[1] | prepend: "/" | append: "/" | replace: ".md","" %}
-{% else %}
-  {% assign pageName = pageName[0] | prepend: "/" | append: "/" | replace: ".md","" %}
-{% endif %}
-{% endcomment %}
-
 {% assign navigations = "" | split:"|" %}
 {% for navbars_data in site.data.navbars %}
   {% assign nav = navbars_data[1] %}
   {% assign navigations = navigations | push: nav %}
-  {% comment %}
-  {% if pageName == nav.path %}
-    {% assign this_pages_navbar = nav %}
-    {% else %}
-    {% assign not_this_page = nav %}
-  {% endif %}
-  {% endcomment %}
 {% endfor %}
 {% assign navbars = navigations | sort:"order" %}
 
@@ -32,19 +16,27 @@
     {% for navbar in navbars %}
       {% for breadcrumb in navbar.section %}
         {% assign crumbs = breadcrumb.path | remove:'/index.html' | split: '/' %}
-        {% comment %}
-        {% assign crumbs = breadcrumb.path | split: '/' %}
-        {% endcomment %}
         {% assign cur_path = breadcrumb.path | append:'/' %}
-
         {% if pagePath == cur_path %}
-          {% comment %}
-            > {{ breadcrumb.title }}
-          {% endcomment %}
           {% for crumb in crumbs offset: 1 %}
-          {{ forloop.index }}
-            {% if site.baseurl == 'ido-specs' %}
-              {{ forloop.index }}
+            {% if site.baseurl == '/ido-specs' %}
+              {% if forloop.last %}
+                > {{ breadcrumb.title }}
+              {% else %}
+                {% if forloop.index > 2 %}
+                  {% assign crumb_limit = forloop.index | plus: 2 %}
+                  {% for crumb in crumbs limit: crumb_limit %}
+                    {% assign crumb_url = '' %}
+                    {% if crumb == 'Doc' %}
+                      {% assign crumb_url = site.main_url | append:'/docs/product-overview' %}
+                    {% else %}
+                      {% assign crumb_url = crumb %}
+                    {% endif %}
+                    {{ crumb_url | append: '/' }}
+                  {% endfor %}
+                > <a href="#">{{ crumb | replace:'-',' ' | remove:'.html' | capitalize }}</a>
+                {% endif %}
+              {% endif %}
             {% else %}
             {% endif %}
           {% endfor %}
@@ -53,14 +45,4 @@
       {% endfor %}
     {% endfor %}
   {% endif %}
-
-  {% comment %}
-  {% for crumb in crumbs offset: 1 %}
-    {% if forloop.last %}
-      / {{ page.title }}
-    {% else %}
-      / <a href="{% assign crumb_limit = forloop.index | plus: 1 %}{% for crumb in crumbs limit: crumb_limit %}{{ crumb | append: '/' }}{% endfor %}">{{ crumb | replace:'-',' ' | remove:'.html' | capitalize }}</a>
-    {% endif %}
-  {% endfor %}
-  {% endcomment %}
 </div>
