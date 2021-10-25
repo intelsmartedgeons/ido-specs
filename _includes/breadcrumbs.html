@@ -32,8 +32,8 @@
                       {{ forloop.index }}
                     {% endif %}
                     {% endcomment %}
-                    
-                    {% if forloop.index >= 2 %}
+
+                    {% if forloop.index > 2 %}
                       {% if crumb_main == 'doc' %}
                         {{ site.main_url | append: '/docs/product-overview/' }}
                       {% else %}
