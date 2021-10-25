@@ -25,7 +25,7 @@
               {% else %}
                 {% if forloop.index >= 2 %}
                   {% assign crumb_main = crumb %}
-                  {% assign crumb_limit = forloop.index | plus: 1 %}
+                  {% assign crumb_limit = forloop.index | plus: 2 %}
                   {% for crumb in crumbs limit: crumb_limit %}
 
                     {% comment %}
