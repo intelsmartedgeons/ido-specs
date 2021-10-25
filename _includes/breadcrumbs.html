@@ -24,16 +24,17 @@
                 > {{ breadcrumb.title }}
               {% else %}
                 {% if forloop.index > 2 %}
-                  
-                > <a href="{% assign crumb_limit = forloop.index | plus: 2 %}
-                {% for crumb in crumbs limit: crumb_limit %}
-                  {% if crumb == 'Doc' %}
-                    {% assign crumb_url = site.main_url | append:'/docs/product-overview' %}
-                  {% else %}
-                    {% assign crumb_url = crumb %}
-                  {% endif %}
-                  {{ crumb_url | append: '/' }}
-                {% endfor %}">{{ crumb | replace:'-',' ' | remove:'.html' | capitalize }}</a>
+                  {% assign crumb_limit = forloop.index | plus: 2 %}
+                  {% for crumb in crumbs limit: crumb_limit %}
+                    {% assign crumb_url = '' %}
+                    {% if crumb == 'Doc' %}
+                      {% assign crumb_url = site.main_url | append:'/docs/product-overview' %}
+                    {% else %}
+                      {% assign crumb_url = crumb %}
+                    {% endif %}
+                    {{ crumb_url | append: '/' }}
+                  {% endfor %}
+                > <a href="#">{{ crumb | replace:'-',' ' | remove:'.html' | capitalize }}</a>
                 {% endif %}
               {% endif %}
             {% else %}
