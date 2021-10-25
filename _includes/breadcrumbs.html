@@ -38,8 +38,9 @@
           {% comment %}
             > {{ breadcrumb.title }}
           {% endcomment %}
+          {{ crumbs }}
           {% for crumb in crumbs offset: 1 %}
-            {{ site.baseurl }}
+            
             {% if site.baseurl == 'ido-specs' %}
               {{ forloop.index }}
             {% else %}
