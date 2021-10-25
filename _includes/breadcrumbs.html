@@ -26,6 +26,7 @@
                 {% if forloop.index >= 2 %}
                   {% assign crumb_limit = forloop.index | plus: 2 %}
                   {% for crumb in crumbs limit: crumb_limit %}
+                    {{ crumb }}
                     {% comment %}
                     {% if crumb == 'doc' %}
                       {{ site.main_url | append: '/docs/product-overview/' }}
