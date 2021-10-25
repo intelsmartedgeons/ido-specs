@@ -23,7 +23,7 @@
               {% if forloop.last %}
                 > {{ breadcrumb.title }}
               {% else %}
-                {% if forloop.index > 2 %}
+                {% if forloop.index >= 2 %}
                   {% assign crumb_limit = forloop.index | plus: 2 %}
                   {% for crumb in crumbs limit: crumb_limit %}
                     {% assign crumb_url = '' %}
