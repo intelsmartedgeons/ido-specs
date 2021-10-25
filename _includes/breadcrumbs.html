@@ -38,7 +38,9 @@
                       {% if crumb_main == 'doc' %}
                         {{ site.main_url | append: '/docs/product-overview/' }}
                       {% else %}
-                        {{ breadcrumb.path }}
+                        {% if forloop.index > 3 %}
+                          {{ breadcrumb.path }}
+                        {% endif %}
                       {% endif %}
                     {% endif %}
 
