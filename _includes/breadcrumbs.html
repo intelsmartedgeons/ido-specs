@@ -35,13 +35,12 @@
         {% assign cur_path = breadcrumb.path | append:'/' %}
 
         {% if pagePath == cur_path %}
-          {{ cur_path }}
-          {{ forloop.index }}
           {% comment %}
             > {{ breadcrumb.title }}
           {% endcomment %}
           {% for crumb in crumbs offset: 1 %}
             {% if site.baseurl == 'ido-specs' %}
+              {{ forloop.index }}
             {% else %}
             {% endif %}
           {% endfor %}
