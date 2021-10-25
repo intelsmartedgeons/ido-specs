@@ -38,14 +38,16 @@
         {% assign cur_path = breadcrumb.path | append:'/' %}
 
         {% if pagePath == cur_path %}
-          {% comment %}
-            > {{ breadcrumb.title }}
-          {% endcomment %}
           {% for crumb in crumbs offset: 1 %}
             {% if site.baseurl == '/ido-specs' %}
               {% if forloop.last %}
                 > {{ breadcrumb.title }}
               {% else %}
+                {% assign new_index = forloop.index | plus: 2 %}
+                {{ new_index }}
+
+
+
                 > <a href="{% assign crumb_limit = forloop.index | plus: 2 %}{% for crumb in crumbs limit: crumb_limit %}{{ crumb | append: '/' }}{% endfor %}">{{ crumb | replace:'-',' ' | remove:'.html' | capitalize }}</a>
               {% endif %}
             {% else %}
