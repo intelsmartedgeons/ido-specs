@@ -24,26 +24,12 @@
                 > {{ breadcrumb.title }}
               {% else %}
                 {% if forloop.index >= 2 %}
-                  {% assign crumb_main = crumb %}
-                  {% assign crumb_limit = forloop.index | plus: 1 %}
-                  {% for crumb in crumbs limit: crumb_limit %}
-
-                  
-                    {% if forloop.index > 2 %}
-                      {% if crumb_main == 'doc' %}
-                        {{ site.main_url | append: '/docs/product-overview/' }}
-                      {% else %}
-                        {% if forloop.index > 3 %}
-                          {{ breadcrumb.path | append: '/' }}
-                        {% endif %}
-                      {% endif %}
-                    {% endif %}
-
-                  {% endfor %}
-                > <a href="#">{{ crumb | replace:'-',' ' | remove:'.html' | capitalize }}</a>
+                {% comment %}
+                  {% assign crumb_main = crumb %}{% assign crumb_limit = forloop.index | plus: 1 %}{% for crumb in crumbs limit: crumb_limit %}{% if forloop.index > 2 %}{% if crumb_main == 'doc' %}{{ site.main_url | append: '/docs/product-overview/' }}{% else %}{% if forloop.index > 3 %}{{ breadcrumb.path | append: '/' }}{% endif %}{% endif %}{% endif %}{% endfor %}
+                {% endcomment %}
+                > <a href="{% assign crumb_main = crumb %}{% assign crumb_limit = forloop.index | plus: 1 %}{% for crumb in crumbs limit: crumb_limit %}{% if forloop.index > 2 %}{% if crumb_main == 'doc' %}{{ site.main_url | append: '/docs/product-overview/' }}{% else %}{% if forloop.index > 3 %}{{ breadcrumb.path | append: '/' }}{% endif %}{% endif %}{% endif %}{% endfor %}">{{ crumb | replace:'-',' ' | remove:'.html' | capitalize }}</a>
                 {% endif %}
               {% endif %}
-            {% else %}
             {% endif %}
           {% endfor %}
         {% endif %}
