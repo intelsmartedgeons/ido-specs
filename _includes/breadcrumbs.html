@@ -29,7 +29,7 @@
                     {% comment %}
                     {{ forloop.index }}
                     {% endcomment %}
-                    {% forloop.index >= 2 %}
+                    {% if forloop.index >= 2 %}
                       {% if crumb == 'doc' %}
                         {{ site.main_url | append: '/docs/product-overview/' }}
                       {% else %}
