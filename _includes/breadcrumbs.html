@@ -36,6 +36,7 @@
 
         {% if pagePath == cur_path %}
           {{ cur_path }}
+          {% if forloop.index %}
           {% comment %}
             > {{ breadcrumb.title }}
           {% endcomment %}
