@@ -19,12 +19,12 @@
         {% assign cur_path = breadcrumb.path | append:'/' %}
         {% if pagePath == cur_path %}
           {% for crumb in crumbs offset: 1 %}
-            {% assign crumb_main = crumb %}
             {% if site.baseurl == '/ido-specs' %}
               {% if forloop.last %}
                 > {{ breadcrumb.title }}
               {% else %}
                 {% if forloop.index >= 2 %}
+                  {% assign crumb_main = crumb %}
                   {% assign crumb_limit = forloop.index | plus: 2 %}
                   {% for crumb in crumbs limit: crumb_limit %}
 
@@ -35,11 +35,11 @@
                     {% endcomment %}
 
                     {% if crumb_main == 'doc' %}
-                        {{ site.main_url | append: '/docs/product-overview/' }}
+                      {{ site.main_url | append: '/docs/product-overview/' }}
                     {% else %}
                       {{ crumb | append: '/' }}
                     {% endif %}
-                    
+
                   {% endfor %}
                 > <a href="#">{{ crumb | replace:'-',' ' | remove:'.html' | capitalize }}</a>
                 {% endif %}
