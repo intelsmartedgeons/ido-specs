@@ -10,7 +10,9 @@ layout: default
             <h1 class="uk-article-title">{{ page.title | escape }}</h1>
 
             <div class="article-content link-primary">
-                {% include breadcrumbs.html %}
+                {% if site.baseurl == '/ido-specs'%}
+                    {% include breadcrumbs.html %}
+                {% endif %}
                 {{ content }}
             </div>
 
