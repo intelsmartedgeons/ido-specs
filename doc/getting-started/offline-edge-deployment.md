@@ -9,9 +9,7 @@ Copyright (c) 2019-2020 Intel Corporation
   - [Creating the offline package from an online node](#creating-the-offline-package-from-an-online-node)
   - [Placing the complete offline package in offline environment](#placing-the-complete-offline-package-in-offline-environment)
   - [Deployment in offline environment](#deployment-in-offline-environment)
-{% comment %} 
 # Smart Edge Open Network Edge: Offline Deployment
-{% endcomment %} 
 
 ## Smart Edge Open support in offline environment
 
