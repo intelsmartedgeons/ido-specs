@@ -564,14 +564,13 @@ pwek_gnodeb_enable: true
 
 2. Set the upload path for `GNodeB` prerequisites.
 
-Edit the `ido-converged-edge-experience-kits/flavors/pwek-all-in-one/all.yml` file to customize the upload path.
-
-```yaml
-remote_pwek_path: "/opt/pwek"
-# on edge node
-pwek_system_studio_license: "{{ remote_pwek_path }}/license"
-pwek_flexran_extracted: "{{ remote_pwek_path }}/flexran"
-```
+  Edit the `ido-converged-edge-experience-kits/flavors/pwek-all-in-one/all.yml` file to customize the upload path.
+  ```yaml
+  remote_pwek_path: "/opt/pwek"
+  # on edge node
+  pwek_system_studio_license: "{{ remote_pwek_path }}/license"
+  pwek_flexran_extracted: "{{ remote_pwek_path }}/flexran"
+  ```
 
 ### Configure PTP Time Synchronization
 
