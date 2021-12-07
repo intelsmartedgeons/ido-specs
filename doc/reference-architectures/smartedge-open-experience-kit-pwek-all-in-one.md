@@ -549,27 +549,26 @@ The following are required for `gNodeB` deployment:
 
 #### Settings
 
-1. Edit the `ido-converged-edge-experience-kits/flavors/pwek-all-in-one/all.yml` file.
+1.  Edit the `ido-converged-edge-experience-kits/flavors/pwek-all-in-one/all.yml` file.
+  ```yaml
+  # PWEK All in One
+  pwek_enable: true
 
-```yaml
-# PWEK All in One
-pwek_enable: true
+  pwek_namespace_enable: true
+  pwek_namespace_name: pwek-rdc
 
-pwek_namespace_enable: true
-pwek_namespace_name: pwek-rdc
+  pwek_5gc_enable: true
+  pwek_gnodeb_enable: true
+  ```
 
-pwek_5gc_enable: true
-pwek_gnodeb_enable: true
-```
-
-2. Set the upload path for `GNodeB` prerequisites. 
-Edit the `ido-converged-edge-experience-kits/flavors/pwek-all-in-one/all.yml` file to customize the upload path.
-```yaml
-remote_pwek_path: "/opt/pwek"
-# on edge node
-pwek_system_studio_license: "{{ remote_pwek_path }}/license"
-pwek_flexran_extracted: "{{ remote_pwek_path }}/flexran"
-```
+2.  Set the upload path for `GNodeB` prerequisites.
+  Edit the `ido-converged-edge-experience-kits/flavors/pwek-all-in-one/all.yml` file to customize the upload path.
+  ```yaml
+  remote_pwek_path: "/opt/pwek"
+  # on edge node
+  pwek_system_studio_license: "{{ remote_pwek_path }}/license"
+  pwek_flexran_extracted: "{{ remote_pwek_path }}/flexran"
+  ```
 
 ### Configure PTP Time Synchronization
 
