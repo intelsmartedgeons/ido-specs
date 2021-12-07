@@ -563,6 +563,7 @@ The following are required for `gNodeB` deployment:
     ```
 
 2. Set the upload path for `GNodeB` prerequisites.
+
     Edit the `ido-converged-edge-experience-kits/flavors/pwek-all-in-one/all.yml` file to customize the upload path.
     ```yaml
     remote_pwek_path: "/opt/pwek"
