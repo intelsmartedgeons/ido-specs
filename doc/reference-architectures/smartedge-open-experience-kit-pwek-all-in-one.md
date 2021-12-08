@@ -519,10 +519,10 @@ These steps are performed on the machine where the Ansible playbook will be run.
 
 11. Copy gNodeB and 5GCN images and deployment files
 
-The binaries from gNodeB and 5GCN are required to be copied from the deployment machine so it needs to have atleast 50-60 GB of storage available. 
+    The binaries from gNodeB and 5GCN are required to be copied from the deployment machine so it needs to have atleast 50-60 GB of storage available. 
 
-gNodeB: `/opt/pwek_offline_files/edge_node`
-5GCN: `/opt/pwek_offline_files/controller`
+    gNodeB: `/opt/pwek_offline_files/edge_node`
+    5GCN: `/opt/pwek_offline_files/controller`
 
 12. Deploy the experience kit.
 
