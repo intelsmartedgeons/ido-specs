@@ -760,109 +760,109 @@ This section describes how to onboard the Intel® Distribution of OpenVINO™ to
 
 1. Clone the `edgeapps` repository to the edge node.
 
-```shell
-[root@node]# git clone https://github.com/smart-edge-open/edgeapps.git
-```
+    ```shell
+    [root@node]# git clone https://github.com/smart-edge-open/edgeapps.git
+    ```
 
 2. Build the Docker image.
 
-```shell
-[root@node]# cd edgeapps/applications/openvino/producer
-[root@node]# bash ./build-image.sh
-[root@node]# cd ../consumer
-[root@node]# bash ./build-image.sh pwek
-```
+    ```shell
+    [root@node]# cd edgeapps/applications/openvino/producer
+    [root@node]# bash ./build-image.sh
+    [root@node]# cd ../consumer
+    [root@node]# bash ./build-image.sh pwek
+    ```
 
 3. Attach a VF NIC to the OpenVINO pod. 
 Make sure the VF number of [PF interface p5p1](#edgeapp-n6-interface) defined for EdgeApp above and that sriov_numvfs is set to a non-zero value.
 
-```shell
-[root@node]# cat /sys/class/net/p5p1/device/sriov_numvfs
-5
-```
+    ```shell
+    [root@node]# cat /sys/class/net/p5p1/device/sriov_numvfs
+    5
+    ```
 
 4. Verify `sriov-net-openvino` configuration.
 `sriov-net-openvino` is a resource of type NetworkAttachmentDefinition. Ensure it is defined in the default namespace with the subnet set to 6.6.6.0/24.
 
-```shell
-[root@controller]# get net-attach-def sriov-net-openvino -o yaml
-apiVersion: k8s.cni.cncf.io/v1
-kind: NetworkAttachmentDefinition
-metadata:
-  annotations:
-    k8s.v1.cni.cncf.io/resourceName: intel.com/intel_sriov_10G_VEDIOSTREAM
-  creationTimestamp: "2021-09-07T11:39:58Z"
-  generation: 4
-  managedFields:
-  - apiVersion: k8s.cni.cncf.io/v1
-    fieldsType: FieldsV1
-    fieldsV1:
-      f:metadata:
-        f:annotations:
-          .: {}
-          f:k8s.v1.cni.cncf.io/resourceName: {}
-      f:spec: {}
-    manager: Go-http-client
-    operation: Update
-    time: "2021-09-07T11:39:58Z"
-  - apiVersion: k8s.cni.cncf.io/v1
-    fieldsType: FieldsV1
-    fieldsV1:
-      f:spec:
-        f:config: {}
-    manager: kubectl-edit
-    operation: Update
-    time: "2021-09-10T05:48:00Z"
-  name: sriov-net-openvino
-  namespace: default
-  resourceVersion: "718200"
-  uid: 10fab096-26af-463e-82ff-25ceec8017b5
-spec:
-  config: '{ "type": "sriov", "ipam": { "type": "host-local", "subnet": "6.6.6.0/24",
-    "rangeStart": "6.6.6.7", "rangeEnd": "6.6.6.30", "routes": [{ "dst": "0.0.0.0/0"}],
-    "gateway": "6.6.6.1" } }'
-```
+    ```shell
+    [root@controller]# get net-attach-def sriov-net-openvino -o yaml
+    apiVersion: k8s.cni.cncf.io/v1
+    kind: NetworkAttachmentDefinition
+    metadata:
+      annotations:
+        k8s.v1.cni.cncf.io/resourceName: intel.com/intel_sriov_10G_VEDIOSTREAM
+      creationTimestamp: "2021-09-07T11:39:58Z"
+      generation: 4
+      managedFields:
+      - apiVersion: k8s.cni.cncf.io/v1
+        fieldsType: FieldsV1
+        fieldsV1:
+          f:metadata:
+            f:annotations:
+              .: {}
+              f:k8s.v1.cni.cncf.io/resourceName: {}
+          f:spec: {}
+        manager: Go-http-client
+        operation: Update
+        time: "2021-09-07T11:39:58Z"
+      - apiVersion: k8s.cni.cncf.io/v1
+        fieldsType: FieldsV1
+        fieldsV1:
+          f:spec:
+            f:config: {}
+        manager: kubectl-edit
+        operation: Update
+        time: "2021-09-10T05:48:00Z"
+      name: sriov-net-openvino
+      namespace: default
+      resourceVersion: "718200"
+      uid: 10fab096-26af-463e-82ff-25ceec8017b5
+    spec:
+      config: '{ "type": "sriov", "ipam": { "type": "host-local", "subnet": "6.6.6.0/24",
+        "rangeStart": "6.6.6.7", "rangeEnd": "6.6.6.30", "routes": [{ "dst": "0.0.0.0/0"}],
+        "gateway": "6.6.6.1" } }'
+    ```
 
 ### Deploy the OpenVINO Application
 
 1. Apply the yaml file on the controller node.
 
-```shell
-[root@controller]# kubectl apply -f openvino-prod-app.yaml
-[root@controller]# kubectl apply -f openvino-cons-sriov-app.yaml
-[root@controller]# kubectl kubectl certificate approve openvino-prod-app
-[root@controller]# kubectl kubectl certificate approve openvino-cons-app
-[root@controller]# kubectl get po
-NAME                                 READY   STATUS    RESTARTS   AGE
-openvino-cons-app-7bbd7c665c-5kf5q   1/1     Running   0          146m
-openvino-prod-app-79d5756d76-hhmjg   1/1     Running   0          3d8h
-```
+    ```shell
+    [root@controller]# kubectl apply -f openvino-prod-app.yaml
+    [root@controller]# kubectl apply -f openvino-cons-sriov-app.yaml
+    [root@controller]# kubectl kubectl certificate approve openvino-prod-app
+    [root@controller]# kubectl kubectl certificate approve openvino-cons-app
+    [root@controller]# kubectl get po
+    NAME                                 READY   STATUS    RESTARTS   AGE
+    openvino-cons-app-7bbd7c665c-5kf5q   1/1     Running   0          146m
+    openvino-prod-app-79d5756d76-hhmjg   1/1     Running   0          3d8h
+    ```
 
 2. To apply a new NetworkPolicy for the OpenVINO application, please refer the [document](https://github.com/smart-edge-open/ido-specs/blob/mainline/doc/applications-onboard/network-edge-applications-onboarding.md#applying-kubernetes-network-policies-1). Or delete the block-all NetworkPolicy in the default namespace.
 
-```shell
-[root@controller]# kubectl delete networkpolicy block-all-ingress
-```
+    ```shell
+    [root@controller]# kubectl delete networkpolicy block-all-ingress
+    ```
 
 ### Start a Network Stream in the OpenVINO Application
 
 1. Login the edge node, and add an additional route rule for the OpenVINO consumer application.
-```shell
-[root@node]# docker ps | grep k8s_openvino-cons-app | awk '{print $1}'
-2a808c0b24a7
-[root@node]# docker inspect -f {{.State.Pid}} 2a808c0b24a7
-63011
-[root@node]# nsenter -n -t 63011
-Revert complete!
-[root@node]# route add -net 195.168.1.0 netmask 255.255.255.0 gw 6.6.6.1
-[root@node]# route
-Kernel IP routing table
-Destination     Gateway         Genmask         Flags Metric Ref    Use Iface
-default         gateway         0.0.0.0         UG    0      0        0 eth0
-6.6.6.0         0.0.0.0         255.255.255.0   U     0      0        0 net1
-gateway         0.0.0.0         255.255.255.255 UH    0      0        0 eth0
-195.168.1.0     6.6.6.1         255.255.255.0   UG    0      0        0 net1
-```
+    ```shell
+    [root@node]# docker ps | grep k8s_openvino-cons-app | awk '{print $1}'
+    2a808c0b24a7
+    [root@node]# docker inspect -f {{.State.Pid}} 2a808c0b24a7
+    63011
+    [root@node]# nsenter -n -t 63011
+    Revert complete!
+    [root@node]# route add -net 195.168.1.0 netmask 255.255.255.0 gw 6.6.6.1
+    [root@node]# route
+    Kernel IP routing table
+    Destination     Gateway         Genmask         Flags Metric Ref    Use Iface
+    default         gateway         0.0.0.0         UG    0      0        0 eth0
+    6.6.6.0         0.0.0.0         255.255.255.0   U     0      0        0 net1
+    gateway         0.0.0.0         255.255.255.255 UH    0      0        0 eth0
+    195.168.1.0     6.6.6.1         255.255.255.0   UG    0      0        0 net1
+    ```
  > NOTE: The subnet 195.168.1.0/24 is the UE (User Equipment) network segment allocated by 5GC network functions.
 
 2. Install [VLC apk](https://m.apkpure.com/vlc-for-android/org.videolan.vlc) on the UE.
