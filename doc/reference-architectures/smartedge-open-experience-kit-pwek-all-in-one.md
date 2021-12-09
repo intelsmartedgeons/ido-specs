@@ -261,6 +261,7 @@ Perform the following steps on the target machine before deployment:
       * Press the `Insert` key to enter Insert mode
       * Add a space at the end of both lines in the file and write hostname after it. 
       * Exit the vi editor by pressing the `Esc` key, then typing `:wq` and pressing the `Enter` key.
+      
 3. Reboot the target machine.
 
 ##### Steps to be performed
