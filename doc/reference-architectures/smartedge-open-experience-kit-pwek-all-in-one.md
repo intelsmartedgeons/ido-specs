@@ -264,18 +264,18 @@ Perform the following steps on the target machine before deployment:
 
 3. Reboot the target machine.
 
-##### Steps to be performed
+    ##### Steps to be performed
 
-These steps are performed on the machine where the Ansible playbook will be run.
+    These steps are performed on the machine where the Ansible playbook will be run.
 
-1. Copy the SSH key from the machine where the Ansible playbook is going to be run, to the target machine. Example commands:
-    > NOTE: Generate ssh key if is not present on the machine: `ssh-keygen -t rsa` (Press enter key to apply default values)
+    1. Copy the SSH key from the machine where the Ansible playbook is going to be run, to the target machine. Example commands:
+        > NOTE: Generate ssh key if is not present on the machine: `ssh-keygen -t rsa` (Press enter key to apply default values)
 
-    Repeat for each target machine.
-    ```shell
-    ssh-copy-id root@TARGET_IP
-    ```
-    > NOTE: Replace TARGET_IP with the actual IP address of the target machine.
+        Repeat for each target machine.
+        ```shell
+        ssh-copy-id root@TARGET_IP
+        ```
+        > NOTE: Replace TARGET_IP with the actual IP address of the target machine.
 
 2. Clone the `ido-converged-edge-experience-kits` repo from `github.com/smart-edge-open` using a Git token.
     ```shell
@@ -519,16 +519,16 @@ These steps are performed on the machine where the Ansible playbook will be run.
 
 11. Copy gNodeB and 5GCN images and deployment files
 
-    The binaries from gNodeB and 5GCN are required to be copied from the deployment machine so it needs to have atleast 50-60 GB of storage available. 
+      The binaries from gNodeB and 5GCN are required to be copied from the deployment machine so it needs to have atleast 50-60 GB of storage available. 
 
-    gNodeB: `/opt/pwek_offline_files/edge_node` 5GCN: `/opt/pwek_offline_files/controller`
+      gNodeB: `/opt/pwek_offline_files/edge_node` 5GCN: `/opt/pwek_offline_files/controller`
 
 12. Deploy the experience kit.
 
-    Silent deployment:
-    ```shell
-    python3 deploy.py
-    ```
+      Silent deployment:
+      ```shell
+      python3 deploy.py
+      ```
 
 ## 5G Access Network Functions
 
