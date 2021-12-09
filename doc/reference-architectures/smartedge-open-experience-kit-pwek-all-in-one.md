@@ -251,31 +251,31 @@ Perform the following steps on the target machine before deployment:
 2. Change the target system's hostname.
 
   * Edit the `/etc/hostname` file: 
-  	* `vi /etc/hostname`
-  	* Press the `Insert` key to enter Insert mode
-  	* Delete the old hostname and replace it with the new one. The new hostname can be any combination of valid characters, preferably a meaningful name.
-  	* Exit the vi editor by pressing the `Esc` key, then typing `:wq` and pressing the `Enter` key. 
+  * `vi /etc/hostname`
+  * Press the `Insert` key to enter Insert mode
+  * Delete the old hostname and replace it with the new one. The new hostname can be any combination of valid characters, preferably a meaningful name.
+  * Exit the vi editor by pressing the `Esc` key, then typing `:wq` and pressing the `Enter` key. 
   
   * Edit the `/etc/hosts` file: 
-  	* `vi /etc/hosts`
-  	* Press the `Insert` key to enter Insert mode
-  	* Add a space at the end of both lines in the file and write hostname after it. 
-  	* Exit the vi editor by pressing the `Esc` key, then typing `:wq` and pressing the `Enter` key.
+  * `vi /etc/hosts`
+  * Press the `Insert` key to enter Insert mode
+  * Add a space at the end of both lines in the file and write hostname after it. 
+  * Exit the vi editor by pressing the `Esc` key, then typing `:wq` and pressing the `Enter` key.
 
 3. Reboot the target machine.
 
-    ##### Steps to be performed
+##### Steps to be performed
 
-    These steps are performed on the machine where the Ansible playbook will be run.
+These steps are performed on the machine where the Ansible playbook will be run.
 
-    1. Copy the SSH key from the machine where the Ansible playbook is going to be run, to the target machine. Example commands:
-        > NOTE: Generate ssh key if is not present on the machine: `ssh-keygen -t rsa` (Press enter key to apply default values)
+1. Copy the SSH key from the machine where the Ansible playbook is going to be run, to the target machine. Example commands:
+    > NOTE: Generate ssh key if is not present on the machine: `ssh-keygen -t rsa` (Press enter key to apply default values)
 
-        Repeat for each target machine.
-        ```shell
-        ssh-copy-id root@TARGET_IP
-        ```
-        > NOTE: Replace TARGET_IP with the actual IP address of the target machine.
+    Repeat for each target machine.
+    ```shell
+    ssh-copy-id root@TARGET_IP
+    ```
+    > NOTE: Replace TARGET_IP with the actual IP address of the target machine.
 
 2. Clone the `ido-converged-edge-experience-kits` repo from `github.com/smart-edge-open` using a Git token.
     ```shell
