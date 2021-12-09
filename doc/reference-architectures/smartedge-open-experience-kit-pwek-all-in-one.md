@@ -250,22 +250,21 @@ Perform the following steps on the target machine before deployment:
 
 2. Change the target system's hostname.
 
-  * Edit the `/etc/hostname` file: 
-  	* `vi /etc/hostname`
-  	* Press the `Insert` key to enter Insert mode
-  	* Delete the old hostname and replace it with the new one. The new hostname can be any combination of valid characters, preferably a meaningful name.
-  	* Exit the vi editor by pressing the `Esc` key, then typing `:wq` and pressing the `Enter` key. 
+    * Edit the `/etc/hostname` file: 
+      * `vi /etc/hostname`
+      * Press the `Insert` key to enter Insert mode
+      * Delete the old hostname and replace it with the new one. The new hostname can be any combination of valid characters, preferably a meaningful name.
+      * Exit the vi editor by pressing the `Esc` key, then typing `:wq` and pressing the `Enter` key. 
   
-  * Edit the `/etc/hosts` file: 
-  	* `vi /etc/hosts`
-  	* Press the `Insert` key to enter Insert mode
-  	* Add a space at the end of both lines in the file and write hostname after it. 
-  	* Exit the vi editor by pressing the `Esc` key, then typing `:wq` and pressing the `Enter` key.
+    * Edit the `/etc/hosts` file: 
+      * `vi /etc/hosts`
+      * Press the `Insert` key to enter Insert mode
+      * Add a space at the end of both lines in the file and write hostname after it. 
+      * Exit the vi editor by pressing the `Esc` key, then typing `:wq` and pressing the `Enter` key.
 
 3. Reboot the target machine.
 
-
-##### Steps to be performed
+#### Steps to be performed
 
 These steps are performed on the machine where the Ansible playbook will be run.
 
