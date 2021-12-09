@@ -869,7 +869,7 @@ Make sure the VF number of [PF interface p5p1](#edgeapp-n6-interface) defined fo
 2. Install [VLC apk](https://m.apkpure.com/vlc-for-android/org.videolan.vlc) on the UE.
     - Get the IP address of the SR-IOV interface attached to OpenVINO consumer pod by running the `ip a` command in the consumer pod. The ip address is in 6.6.6.0/24 subnet.
     - Select the "Open Network Stream" option.
-    - Input the address "rtmp://<openvino_consumer_pod_sriov_ip>:5000/live/out.flv". Here, the openvino_consumer_pod_sriov_ip is the address get by `ip a`.
+    - Input the address "rtmp://<openvino_consumer_pod_sriov_ip>:5000/live/out.flv". Here, the openvino_consumer_pod_sriov_ip is the address get by `ip a` test.
     - The video will load after one second.
 
 ## Summary
