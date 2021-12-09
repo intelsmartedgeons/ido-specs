@@ -867,10 +867,10 @@ Make sure the VF number of [PF interface p5p1](#edgeapp-n6-interface) defined fo
  > NOTE: The subnet 195.168.1.0/24 is the UE (User Equipment) network segment allocated by 5GC network functions.
 
 2. Install [VLC apk](https://m.apkpure.com/vlc-for-android/org.videolan.vlc) on the UE.
-- Get the IP address of the SR-IOV interface attached to OpenVINO consumer pod by running the `ip a` command in the consumer pod. The ip address is in 6.6.6.0/24 subnet.
-- Select the "Open Network Stream" option.
-- Input the address "rtmp://<openvino_consumer_pod_sriov_ip>:5000/live/out.flv". Here, the openvino_consumer_pod_sriov_ip is the address get by `ip a`
-- The video will load after one second.
+    - Get the IP address of the SR-IOV interface attached to OpenVINO consumer pod by running the `ip a` command in the consumer pod. The ip address is in 6.6.6.0/24 subnet.
+    - Select the "Open Network Stream" option.
+    - Input the address "rtmp://<openvino_consumer_pod_sriov_ip>:5000/live/out.flv". Here, the openvino_consumer_pod_sriov_ip is the address get by `ip a`.
+    - The video will load after one second.
 
 ## Summary
 This guide walked you through deploying the 5G Private Wireless Experience Kit with Integrated RAN. The reference implementation of Intel® Smart Edge Open created by this process can be used to efficiently deploy, manage, and optimize network functions and applications specifically for an on-premises private wireless network. You can continue to customize this deployment to meet your own use cases. 
