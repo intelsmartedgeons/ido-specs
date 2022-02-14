@@ -9617,25 +9617,54 @@ jQuery(document).ready(function() {
             $(".cn-yes").hide();
         }
     });
-    
+
+    jQuery('.collapsedArea ul li > span').on('click', function(){
+        if(jQuery(this).next('ul').is(':visible')){
+            jQuery(this).next('ul').slideUp();
+            jQuery(this).parent('li').removeClass('openList');
+        }
+        else{
+            jQuery(this).next('ul').slideDown();
+            jQuery(this).parent('li').addClass('openList');
+        }
+    });
 });
 
 
 function cleanString(str) {
     return str.replace(/[^A-Za-z0-9,_()&reg;.-:{}$%@!~=+'&#39;`? ]/g, "");
 }
-
 jQuery(window).on('load', function(){
-    jQuery('.menuIcon').on('click', function(){
-         jQuery(this).parent('.toggleMenu').toggleClass('showMenu')
-     })
-     var pathname = window.location.pathname;
-     if(pathname.includes('/docs/')){
- jQuery('.uk-navbar-container .uk-navbar-left .uk-navbar-nav li a[href="'+pathname+'"]').parent('li').addClass('uk-active');
-     }
- })
- jQuery(window).on('resize', function(){
-     if(jQuery(window).width() >= 960){
-         jQuery('#offcanvas-docs').removeClass('uk-offcanvas-overlay uk-open');
-     }
+    setTimeout(function(){
+        jQuery('.sidebar-docs .leftSection .collapsedArea').animate({
+            scrollTop: jQuery('.sidebar-docs .leftSection .collapsedArea ul li.uk-active').offset().top
+        });
+    }, 1000)
+    if(jQuery('.sidebar-docs .leftSection .collapsedArea ul li.uk-active').length > 0){
+        jQuery('.sidebar-docs .leftSection .collapsedArea ul li.uk-active').parents('.hasChild').addClass('openList');
+        jQuery('.sidebar-docs .leftSection .collapsedArea ul li.uk-active').parents('.hasChild').children('.uk-nav').slideDown();
+    }
+   jQuery('.menuIcon').on('click', function(){
+        jQuery(this).parent('.toggleMenu').toggleClass('showMenu')
+    })
+    var pathname = window.location.pathname;
+    if(pathname.includes('/docs/')){
+        jQuery('.uk-navbar-container .uk-navbar-left .uk-navbar-nav li a[href="'+pathname+'"]').parent('li').addClass('uk-active');
+    }
+    jQuery('.sidebar-docs .leftSection .collapsedArea h5').on('click', function(){
+        jQuery(this).next('ul').slideToggle();
+    })
+})
+jQuery(window).on('resize', function(){
+    if(jQuery(window).width() >= 960){
+        jQuery('#offcanvas-docs').removeClass('uk-offcanvas-overlay uk-open');
+    }
+})
+jQuery(window).on('scroll', function(){
+    if(jQuery(window).scrollTop() >= 200){
+        jQuery('.leftSection').addClass('leftSectionFixed');
+    }
+    else{
+        jQuery('.leftSection').removeClass('leftSectionFixed');
+    }
 })
