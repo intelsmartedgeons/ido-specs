@@ -9668,3 +9668,18 @@ jQuery(window).on('scroll', function(){
         jQuery('.leftSection').removeClass('leftSectionFixed');
     }
 })
+
+// Added by Gaurav kumar
+jQuery(window).on('load', function(){
+	setTimeout(function(){
+		const breadcrumbs    = document.querySelector('#breadcrumbs');
+		const allActiveTabs  = document.querySelectorAll('.openList');
+		let nodeList = '';
+		allActiveTabs.forEach(function(activeTab, i) {
+			nodeList = (i == 0) ? activeTab.firstElementChild.innerHTML : nodeList+" > "+activeTab.firstElementChild.innerHTML;
+			//console.log(nodeList);
+		});
+		breadcrumbs.insertAdjacentHTML("beforeend", nodeList);
+
+	}, 10)
+})
