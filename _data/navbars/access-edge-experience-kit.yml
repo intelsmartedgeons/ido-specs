@@ -1,0 +1,148 @@
+title: "Access Edge Experience Kit"
+order: 5
+section:
+  - title: "Getting Started"
+    order: 1
+    section:
+      - title: Cluster Setup
+        path: /ido-specs/doc/getting-started/smartedge-open-cluster-setup/
+        meta_title:
+        meta_description: 
+      - title: Converged Edge Experience Kits
+        path: /ido-specs/doc/getting-started/converged-edge-experience-kits/
+        meta_title: 
+        meta_description:
+      - title: Offline Deployment
+        path: /ido-specs/doc/getting-started/offline-edge-deployment/
+        meta_title:
+        meta_description:
+      - title: Non-root User
+        path: /ido-specs/doc/getting-started/non-root-user/
+        meta_title: 
+        meta_description:
+      - title: Harbor Registry Service
+        path: /ido-specs/doc/getting-started/harbor-registry/
+        meta_title:
+        meta_description:
+      - title: Kubernetes
+        path: /ido-specs/doc/getting-started/kubernetes-dashboard/
+        meta_title: 
+        meta_description:
+  - title: "Building Blocks"
+    order: 2
+    section:
+      - title: Inter-app Communication
+        path: /ido-specs/doc/building-blocks/dataplane/smartedge-open-interapp/
+        meta_title:
+        meta_description: 
+        
+      - title: OVN/OVS
+        path: /ido-specs/doc/building-blocks/dataplane/smartedge-open-ovn/
+        meta_title: 
+        meta_description:
+        
+      - title: Userspace CNI
+        path: /ido-specs/doc/building-blocks/dataplane/smartedge-open-userspace-cni/
+        meta_title: 
+        meta_description: 
+        
+      - title: Hugepage
+        path:  /ido-specs/doc/building-blocks/enhanced-platform-awareness/smartedge-open-hugepage/
+        meta_title: 
+        meta_description:
+        
+      - title: Node Feature Discovery
+        path:  /ido-specs/doc/building-blocks/enhanced-platform-awareness/smartedge-open-node-feature-discovery/
+        meta_title: 
+        meta_description: 
+        
+      - title: Multiple Interface & PCIe SRIOV
+        path: /ido-specs/doc/building-blocks/enhanced-platform-awareness/smartedge-open-sriov-multiple-interfaces/
+        meta_title: 
+        meta_description:
+        
+      - title: Dedicated CPU Core
+        path: /ido-specs/doc/building-blocks/enhanced-platform-awareness/smartedge-open-dedicated-core/
+        meta_title: 
+        meta_description:
+        
+      - title: BIOS & Firmware Configuration
+        path: /ido-specs/doc/building-blocks/enhanced-platform-awareness/smartedge-open-bios/
+        meta_title: 
+        meta_description:
+        
+      - title: FPGA Support
+        path: /ido-specs/doc/building-blocks/enhanced-platform-awareness/smartedge-open-fpga/
+        meta_title:
+        meta_description: 
+        
+      - title: Intel® vRAN Dedicated Accelerator ACC100
+        path: /ido-specs/doc/building-blocks/enhanced-platform-awareness/smartedge-open-acc100/
+        meta_title: 
+        meta_description: 
+        
+      - title: Intel® Movidius™ Myriad™ X HDDL
+        path: /ido-specs/doc/building-blocks/enhanced-platform-awareness/smartedge-open_hddl/
+        meta_title: 
+        meta_description: 
+        
+      - title: Visual Compute Accelerator Card - Analytics (VCA-A)
+        path: /ido-specs/doc/building-blocks/enhanced-platform-awareness/smartedge-open-vcac-a/
+        meta_title:
+        meta_description:
+        
+      - title: Intel QuickAssist Adapter
+        path: /ido-specs/doc/building-blocks/enhanced-platform-awareness/smartedge-open-qat/
+        meta_title: 
+        meta_description: 
+        
+      - title: Topology Manager
+        path: /ido-specs/doc/building-blocks/enhanced-platform-awareness/smartedge-open-topology-manager/
+        meta_title: 
+        meta_description: 
+        
+      - title: Telemetry
+        path: /ido-specs/doc/building-blocks/enhanced-platform-awareness/smartedge-open-telemetry/
+        meta_title: 
+        meta_description: 
+        
+      - title: Resource Management Daemon
+        path: /ido-specs/doc/building-blocks/enhanced-platform-awareness/smartedge-open-rmd
+        meta_title: 
+        meta_description:
+        
+      - title: Edge Multi-Cluster Orchestrator
+        path: /ido-specs/doc/building-blocks/emco/smartedge-open-emco/
+        meta_title:
+        meta_description: 
+  - title: "Application Onboarding"
+    order: 3
+    section:
+      - title: Network Edge Application Onboarding
+        path: /ido-specs/doc/applications-onboard/network-edge-applications-onboarding/
+        meta_title:
+        meta_description: 
+      - title: Edge DNS
+        path: /ido-specs/doc/applications-onboard/smartedge-open-edgedns/
+        meta_title:
+        meta_description: 
+      - title: Edge Application Agent (EAA)
+        path: /ido-specs/doc/applications-onboard/smartedge-open-eaa/
+        meta_title:
+        meta_description: 
+      - title: Certificate Signing
+        path: /ido-specs/doc/applications-onboard/smartedge-open-certsigner/
+        meta_title:
+        meta_description: 
+      - title: Interface Service
+        path: /ido-specs/doc/applications-onboard/smartedge-open-interface-service/
+        meta_title:
+        meta_description: 
+      - title:  VM Support
+        path: /ido-specs/doc/applications-onboard/smartedge-open-network-edge-vm-support/
+        meta_title:
+        meta_description: 
+      - title: Core Network Configuration Agent (CNCA)
+        path: /ido-specs/doc/applications-onboard/network-edge-applications-onboarding/
+        meta_title:
+        meta_description: 
