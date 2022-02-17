@@ -9653,18 +9653,20 @@ jQuery(window).on('load', function(){
    jQuery('.menuIcon').on('click', function(){
         jQuery(this).parent('.toggleMenu').toggleClass('showMenu')
     })
-    setTimeout(function(){
-		const breadcrumbs    = document.querySelector('#breadcrumbs');
-		const allActiveTabs  = document.querySelectorAll('.openList');
-		let nodeList = '';
-		allActiveTabs.forEach(function(activeTab, i) {
-			nodeList = (i == 0) ? activeTab.firstElementChild.innerHTML : nodeList+" > "+activeTab.firstElementChild.innerHTML;
-			//console.log(nodeList);
-		});
-        const linkText =  jQuery('.sidebar-docs .leftSection .collapsedArea ul li span a[href="'+pathname+'"]').text();
-		breadcrumbs.insertAdjacentHTML("beforeend", nodeList+ " > " +linkText);
+    if(jQuery('#breadcrumbs').length){
+        setTimeout(function(){
+            const breadcrumbs    = document.querySelector('#breadcrumbs');
+            const allActiveTabs  = document.querySelectorAll('.openList');
+            let nodeList = '';
+            allActiveTabs.forEach(function(activeTab, i) {
+                nodeList = (i == 0) ? activeTab.firstElementChild.innerHTML : nodeList+" > "+activeTab.firstElementChild.innerHTML;
+                //console.log(nodeList);
+            });
+            const linkText =  jQuery('.sidebar-docs .leftSection .collapsedArea ul li span a[href="'+pathname+'"]').text();
+            breadcrumbs.insertAdjacentHTML("beforeend", nodeList+ " > " +linkText);
 
-	}, 10)
+        }, 10)
+    }
 })
 jQuery(window).on('resize', function(){
     if(jQuery(window).width() >= 960){
