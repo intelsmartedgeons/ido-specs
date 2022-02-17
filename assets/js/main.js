@@ -9638,7 +9638,7 @@ jQuery(window).on('load', function(){
     var pathname = window.location.pathname;
     pathname = pathname + window.location.search;
     pathname = pathname + window.location.hash;
-    if(pathname.includes('/docs/')){
+    if(pathname.includes('/docs/') || pathname.includes('/ido-specs/')){
         jQuery('.sidebar-docs .leftSection .collapsedArea ul li span a[href="'+pathname+'"]').parent('span').parent('li').addClass('uk-active');
     }
     if(jQuery('.sidebar-docs .leftSection .collapsedArea ul li.uk-active').length > 0){
