@@ -9647,7 +9647,7 @@ jQuery(window).on('load', function(){
     setTimeout(function(){
         if(jQuery('.sidebar-docs .leftSection .collapsedArea ul li.uk-active').length){
             jQuery('.sidebar-docs .leftSection .collapsedArea').animate({
-                scrollTop: jQuery('.sidebar-docs .leftSection .collapsedArea ul li.uk-active').offset().top
+                scrollTop: jQuery('.sidebar-docs .leftSection .collapsedArea ul li.uk-active').position().top
             });
         }
     }, 1000)
