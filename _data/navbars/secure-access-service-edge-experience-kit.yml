@@ -29,7 +29,7 @@ section:
       - title: "Node Feature Discovery"
         path: /ido-specs/doc/building-blocks/enhanced-platform-awareness/smartedge-open-node-feature-discovery/?page=secure-access-service-edge-experience-kit
       - title: "Multiple Interface & PCIe SRIOV"
-        path: /ido-specs/doc/building-blocks/enhanced-platform-awareness/?page=secure-access-service-edge-experience-kitsmartedge-open-sriov-multiple-interfaces
+        path: /ido-specs/doc/building-blocks/enhanced-platform-awareness/smartedge-open-sriov-multiple-interfaces/?page=secure-access-service-edge-experience-kit
       - title: "Dedicated CPU Core"
         path: /ido-specs/doc/building-blocks/enhanced-platform-awareness/smartedge-open-dedicated-core/?page=secure-access-service-edge-experience-kit
       - title: "BIOS & Firmware Configuration"
