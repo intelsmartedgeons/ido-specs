@@ -107,12 +107,12 @@ section:
         meta_description: 
         
       - title: Resource Management Daemon
-        path: /ido-specs/doc/building-blocks/enhanced-platform-awareness/smartedge-open-rmd?page=near-edge-experience-kit
+        path: /ido-specs/doc/building-blocks/enhanced-platform-awareness/smartedge-open-rmd/?page=near-edge-experience-kit
         meta_title: 
         meta_description:
         
       - title: Edge Multi-Cluster Orchestrator
-        path: /ido-specs/doc/building-blocks/emco/smartedge-open-emco/?page=near-edge-experience-kit?page=near-edge-experience-kit
+        path: /ido-specs/doc/building-blocks/emco/smartedge-open-emco/?page=near-edge-experience-kit/?page=near-edge-experience-kit
         meta_title:
         meta_description: 
   - title: "Application Onboarding"
