@@ -8,11 +8,11 @@ section:
       meta_description: 
       section:
         - title: Multus CNI
-          path: /docs/components/networking/multus
+          path: /docs/components/networking/multus?page=building-blocks
           meta_title: 
           meta_description: 
         - title: SR-IOV Network Operator
-          path: /docs/components/networking/sriov-network-operator
+          path: /docs/components/networking/sriov-network-operator?page=building-blocks
           meta_title: 
           meta_description:     
 
@@ -22,15 +22,15 @@ section:
       meta_description:
       section: 
         - title: CPU Manager
-          path: /docs/components/resource-management/cpu-manager
+          path: /docs/components/resource-management/cpu-manager?page=building-blocks
           meta_title: 
           meta_description:
         - title: Node Feature Discovery
-          path: /docs/components/resource-management/node-feature-discovery
+          path: /docs/components/resource-management/node-feature-discovery?page=building-blocks
           meta_title: 
           meta_description:
         - title: Topology Manager
-          path: /docs/components/resource-management/topology-manager
+          path: /docs/components/resource-management/topology-manager?page=building-blocks
           meta_title: 
           meta_description:      
         
@@ -40,21 +40,21 @@ section:
       meta_description:
       section: 
         - title: Application Security
-          path: /docs/components/security/application-security-using-sgx
+          path: /docs/components/security/application-security-using-sgx?page=building-blocks
           meta_title: 
           meta_description:
         - title: Platform Attestation
-          path: /docs/components/security/platform-attestation-using-isecl
+          path: /docs/components/security/platform-attestation-using-isecl?page=building-blocks
           meta_title: 
           meta_description:   
       
     #- title: SRIOV
     - title: Telemetry
-      path: /docs/components/telemetry/telemetry
+      path: /docs/components/telemetry/telemetry?page=building-blocks
       meta_title: 
       meta_description: 
       
     - title: Application Onboarding
-      path: /docs/application-onboarding/application-onboarding-cmdline
+      path: /docs/application-onboarding/application-onboarding-cmdline?page=building-blocks
       meta_title: 
       meta_description: 
