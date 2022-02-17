@@ -1,3 +1,10 @@
-title: "Open - Apache 2.0"
+title: "Developer Experience Kit"
 path: /open-apache/
 order: 2
+section:
+  - title: "Overview"
+    path: /docs/experience-kits/developer-experience-kit/#Overview
+  - title: "How it works"
+    path: /docs/experience-kits/developer-experience-kit/#howitworks
+  - title: "Get Started"
+    path: /docs/experience-kits/developer-experience-kit/#getstarted

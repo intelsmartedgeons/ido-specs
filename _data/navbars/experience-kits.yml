@@ -1,8 +1,37 @@
-title: "Experience Kits (Open)"
+title: "Private Wireless Experience Kit"
 path: /experience-kits/
-order: 3
+order: 4
 section:
-  - title: Developer
-    path: /docs/experience-kits/developer-experience-kit
-    meta_title: 
-    meta_description: 
+  - title: "Overview"
+    path: /docs/experience-kits/private-wireless-experience-kit/#Overview
+  - title: "How it works"
+    path: /docs/experience-kits/private-wireless-experience-kit/#howitworks
+  - title: "Get Started"
+    path: /docs/experience-kits/private-wireless-experience-kit/#getstarted
+
+  - title: "Building Blocks"
+    section:
+      - title: "Networking"
+        section:
+          - title: "SR-IOV Network Operator"
+            path: /docs/components/networking/sriov-network-operator/?page=private-wireless-experience-kit
+            meta_title: 
+            meta_description: 
+          - title: "SR-IOV FEC Operator"
+            path: /ido-specs/doc/building-blocks/enhanced-platform-awareness/smartedge-open-acc100
+            meta_title: 
+            meta_description:  
+          - title: "Multus CNI"
+            path: /docs/components/networking/multus/?page=private-wireless-experience-kit
+            meta_title: 
+            meta_description:   
+      - title: "Resource Management"
+        section:
+          - title: "Node Feature Discovery"
+            path: /docs/components/resource-management/node-feature-discovery/?page=private-wireless-experience-kit
+            meta_title: 
+            meta_description: 
+          - title: "Topology Manager"
+            path: /docs/components/resource-management/topology-manager/?page=private-wireless-experience-kit
+            meta_title: 
+            meta_description:       

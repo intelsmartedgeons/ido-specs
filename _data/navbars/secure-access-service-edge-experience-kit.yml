@@ -1,0 +1,70 @@
+title: "Secure Access Service Edge Experience Kit"
+path: /experience-kits/
+order: 5
+section:
+  - title: "Getting Started"
+    section:
+      - title: "Cluster Setup"
+        path: /ido-specs/doc/getting-started/smartedge-open-cluster-setup
+      - title: "Converged Edge Experience Kits"
+        path: /ido-specs/doc/getting-started/converged-edge-experience-kits
+      - title: "Offline Deployment"
+        path: /ido-specs/doc/getting-started/offline-edge-deployment
+      - title: "Non-root User"
+        path: /ido-specs/doc/getting-started/non-root-user
+      - title: "Harbor Registry Service"
+        path: /ido-specs/doc/getting-started/harbor-registry
+      - title: "Kubernetes Dashboard"
+        path: /ido-specs/doc/getting-started/kubernetes-dashboard
+  - title: "Building Blocks"
+    section:
+      - title: "Inter-app Communication"
+        path: /ido-specs/doc/building-blocks/dataplane/smartedge-open-interapp
+      - title: "OVN/OVS"
+        path: /ido-specs/doc/building-blocks/dataplane/smartedge-open-ovn
+      - title: "Userspace CNI"
+        path: /ido-specs/doc/building-blocks/dataplane/smartedge-open-userspace-cni
+      - title: "Hugepage"
+        path: /ido-specs/doc/building-blocks/enhanced-platform-awareness/smartedge-open-hugepage
+      - title: "Node Feature Discovery"
+        path: /ido-specs/doc/building-blocks/enhanced-platform-awareness/smartedge-open-node-feature-discovery
+      - title: "Multiple Interface & PCIe SRIOV"
+        path: /ido-specs/doc/building-blocks/enhanced-platform-awareness/smartedge-open-sriov-multiple-interfaces
+      - title: "Dedicated CPU Core"
+        path: /ido-specs/doc/building-blocks/enhanced-platform-awareness/smartedge-open-dedicated-core
+      - title: "BIOS & Firmware Configuration"
+        path: /ido-specs/doc/building-blocks/enhanced-platform-awareness/smartedge-open-bios
+      - title: "FPGA Support"
+        path: /ido-specs/doc/building-blocks/enhanced-platform-awareness/smartedge-open-fpga
+      - title: "Intel® vRAN Dedicated Accelerator ACC100"
+        path: /ido-specs/doc/building-blocks/enhanced-platform-awareness/smartedge-open-acc100
+      - title: "Intel® Movidius™ Myriad™ X HDDL"
+        path: /ido-specs/doc/building-blocks/enhanced-platform-awareness/smartedge-open_hddl
+      - title: "Visual Compute Accelerator Card - Analytics (VCA-A)"
+        path: /ido-specs/doc/building-blocks/enhanced-platform-awareness/smartedge-open-vcac-a
+      - title: "Intel QuickAssist Adapter"
+        path: /ido-specs/doc/building-blocks/enhanced-platform-awareness/smartedge-open-qat
+      - title: "Topology Manager"
+        path: /ido-specs/doc/building-blocks/enhanced-platform-awareness/smartedge-open-topology-manager
+      - title: "Telemetry"
+        path: /ido-specs/doc/building-blocks/enhanced-platform-awareness/smartedge-open-telemetry
+      - title: "Resource Management Daemon"
+        path: /ido-specs/doc/building-blocks/enhanced-platform-awareness/smartedge-open-rmd
+      - title: "Edge Multi-Cluster Orchestrator"
+        path: /ido-specs/doc/building-blocks/emco/smartedge-open-emco/
+  - title: "Application Onboarding"
+    section:
+      - title: "Network Edge Application Onboarding"
+        path: /ido-specs/doc/applications-onboard/network-edge-applications-onboarding
+      - title: "Edge DNS"
+        path: /ido-specs/doc/applications-onboard/smartedge-open-edgedns
+      - title: "Edge Application Agent (EAA)"
+        path: /ido-specs/doc/applications-onboard/smartedge-open-eaa
+      - title: "Certificate Signing"
+        path: /ido-specs/doc/applications-onboard/smartedge-open-certsigner
+      - title: "Interface Service"
+        path: /ido-specs/doc/applications-onboard/smartedge-open-interface-service
+      - title: "VM Support"
+        path: /ido-specs/doc/applications-onboard/smartedge-open-network-edge-vm-support
+      - title: "Core Network Configuration Agent (CNCA)"
+        path: /ido-specs/doc/applications-onboard/using-smartedge-open-cnca                                      
