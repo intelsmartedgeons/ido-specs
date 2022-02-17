@@ -14,7 +14,7 @@ section:
       - title: "Networking"
         section:
           - title: "SR-IOV Network Operator"
-            path: /docs/components/networking/sriov-network-operator
+            path: /docs/components/networking/sriov-network-operator/?page=private-wireless-experience-kit
             meta_title: 
             meta_description: 
           - title: "SR-IOV FEC Operator"
@@ -22,16 +22,16 @@ section:
             meta_title: 
             meta_description:  
           - title: "Multus CNI"
-            path: /docs/components/networking/multus
+            path: /docs/components/networking/multus/?page=private-wireless-experience-kit
             meta_title: 
             meta_description:   
       - title: "Resource Management"
         section:
           - title: "Node Feature Discovery"
-            path: /docs/components/resource-management/node-feature-discovery
+            path: /docs/components/resource-management/node-feature-discovery/?page=private-wireless-experience-kit
             meta_title: 
             meta_description: 
           - title: "Topology Manager"
-            path: /docs/components/resource-management/topology-manager
+            path: /docs/components/resource-management/topology-manager/?page=private-wireless-experience-kit
             meta_title: 
             meta_description:       
