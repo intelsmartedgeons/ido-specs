@@ -36,16 +36,6 @@ section:
         meta_title:
         meta_description: 
         
-      - title: OVN/OVS
-        path: /ido-specs/doc/building-blocks/dataplane/smartedge-open-ovn/?page=access-edge-experience-kit
-        meta_title: 
-        meta_description:
-        
-      - title: Userspace CNI
-        path: /ido-specs/doc/building-blocks/dataplane/smartedge-open-userspace-cni/?page=access-edge-experience-kit
-        meta_title: 
-        meta_description: 
-        
       - title: Hugepage
         path:  /ido-specs/doc/building-blocks/enhanced-platform-awareness/smartedge-open-hugepage/?page=access-edge-experience-kit
         meta_title: 
@@ -81,21 +71,6 @@ section:
         meta_title: 
         meta_description: 
         
-      - title: Intel® Movidius™ Myriad™ X HDDL
-        path: /ido-specs/doc/building-blocks/enhanced-platform-awareness/smartedge-open_hddl/?page=access-edge-experience-kit
-        meta_title: 
-        meta_description: 
-        
-      - title: Visual Compute Accelerator Card - Analytics (VCA-A)
-        path: /ido-specs/doc/building-blocks/enhanced-platform-awareness/smartedge-open-vcac-a/?page=access-edge-experience-kit
-        meta_title:
-        meta_description:
-        
-      - title: Intel QuickAssist Adapter
-        path: /ido-specs/doc/building-blocks/enhanced-platform-awareness/smartedge-open-qat/?page=access-edge-experience-kit
-        meta_title: 
-        meta_description: 
-        
       - title: Topology Manager
         path: /ido-specs/doc/building-blocks/enhanced-platform-awareness/smartedge-open-topology-manager/?page=access-edge-experience-kit
         meta_title: 
@@ -111,10 +86,6 @@ section:
         meta_title: 
         meta_description:
         
-      - title: Edge Multi-Cluster Orchestrator
-        path: /ido-specs/doc/building-blocks/emco/smartedge-open-emco/?page=access-edge-experience-kit
-        meta_title:
-        meta_description: 
   - title: "Application Onboarding"
     order: 3
     section:
@@ -140,9 +111,5 @@ section:
         meta_description: 
       - title:  VM Support
         path: /ido-specs/doc/applications-onboard/smartedge-open-network-edge-vm-support/?page=access-edge-experience-kit
-        meta_title:
-        meta_description: 
-      - title: Core Network Configuration Agent (CNCA)
-        path: /ido-specs/doc/applications-onboard/using-smartedge-open-cnca/?page=access-edge-experience-kit
         meta_title:
         meta_description: 
