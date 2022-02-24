@@ -2,14 +2,14 @@ title: "Secure Access Service Edge Experience Kit"
 path: /experience-kits/
 order: 5
 section:
+  - title: "Overview"
+    path: /ido-specs/doc/reference-architectures/smartedge-open-experience-kit_sdwan/?page=secure-access-service-edge-experience-kit
   - title: "Getting Started"
     section:
       - title: "Cluster Setup"
         path: /ido-specs/doc/getting-started/smartedge-open-cluster-setup/?page=secure-access-service-edge-experience-kit
       - title: "Converged Edge Experience Kits"
         path: /ido-specs/doc/getting-started/converged-edge-experience-kits/?page=secure-access-service-edge-experience-kit
-      - title: "Offline Deployment"
-        path: /ido-specs/doc/getting-started/offline-edge-deployment/?page=secure-access-service-edge-experience-kit
       - title: "Non-root User"
         path: /ido-specs/doc/getting-started/non-root-user/?page=secure-access-service-edge-experience-kit
       - title: "Harbor Registry Service"
@@ -18,53 +18,15 @@ section:
         path: /ido-specs/doc/getting-started/kubernetes-dashboard/?page=secure-access-service-edge-experience-kit
   - title: "Building Blocks"
     section:
-      - title: "Inter-app Communication"
-        path: /ido-specs/doc/building-blocks/dataplane/smartedge-open-interapp/?page=secure-access-service-edge-experience-kit
-      - title: "OVN/OVS"
-        path: /ido-specs/doc/building-blocks/dataplane/smartedge-open-ovn/?page=secure-access-service-edge-experience-kit
-      - title: "Userspace CNI"
-        path: /ido-specs/doc/building-blocks/dataplane/smartedge-open-userspace-cni/?page=secure-access-service-edge-experience-kit
-      - title: "Hugepage"
-        path: /ido-specs/doc/building-blocks/enhanced-platform-awareness/smartedge-open-hugepage/?page=secure-access-service-edge-experience-kit
       - title: "Node Feature Discovery"
         path: /ido-specs/doc/building-blocks/enhanced-platform-awareness/smartedge-open-node-feature-discovery/?page=secure-access-service-edge-experience-kit
       - title: "Multiple Interface & PCIe SRIOV"
         path: /ido-specs/doc/building-blocks/enhanced-platform-awareness/smartedge-open-sriov-multiple-interfaces/?page=secure-access-service-edge-experience-kit
-      - title: "Dedicated CPU Core"
-        path: /ido-specs/doc/building-blocks/enhanced-platform-awareness/smartedge-open-dedicated-core/?page=secure-access-service-edge-experience-kit
-      - title: "BIOS & Firmware Configuration"
-        path: /ido-specs/doc/building-blocks/enhanced-platform-awareness/smartedge-open-bios/?page=secure-access-service-edge-experience-kit
-      - title: "FPGA Support"
-        path: /ido-specs/doc/building-blocks/enhanced-platform-awareness/smartedge-open-fpga/?page=secure-access-service-edge-experience-kit
-      - title: "Intel® vRAN Dedicated Accelerator ACC100"
-        path: /ido-specs/doc/building-blocks/enhanced-platform-awareness/smartedge-open-acc100/?page=secure-access-service-edge-experience-kit
       - title: "Intel® Movidius™ Myriad™ X HDDL"
         path: /ido-specs/doc/building-blocks/enhanced-platform-awareness/smartedge-open_hddl/?page=secure-access-service-edge-experience-kit
-      - title: "Visual Compute Accelerator Card - Analytics (VCA-A)"
-        path: /ido-specs/doc/building-blocks/enhanced-platform-awareness/smartedge-open-vcac-a/?page=secure-access-service-edge-experience-kit
-      - title: "Intel QuickAssist Adapter"
-        path: /ido-specs/doc/building-blocks/enhanced-platform-awareness/smartedge-open-qat/?page=secure-access-service-edge-experience-kit
-      - title: "Topology Manager"
-        path: /ido-specs/doc/building-blocks/enhanced-platform-awareness/smartedge-open-topology-manager/?page=secure-access-service-edge-experience-kit
       - title: "Telemetry"
         path: /ido-specs/doc/building-blocks/enhanced-platform-awareness/smartedge-open-telemetry/?page=secure-access-service-edge-experience-kit
-      - title: "Resource Management Daemon"
-        path: /ido-specs/doc/building-blocks/enhanced-platform-awareness/smartedge-open-rmd/?page=secure-access-service-edge-experience-kit
-      - title: "Edge Multi-Cluster Orchestrator"
-        path: /ido-specs/doc/building-blocks/emco/smartedge-open-emco/?page=secure-access-service-edge-experience-kit
   - title: "Application Onboarding"
     section:
       - title: "Network Edge Application Onboarding"
         path: /ido-specs/doc/applications-onboard/network-edge-applications-onboarding/?page=secure-access-service-edge-experience-kit
-      - title: "Edge DNS"
-        path: /ido-specs/doc/applications-onboard/smartedge-open-edgedns/?page=secure-access-service-edge-experience-kit
-      - title: "Edge Application Agent (EAA)"
-        path: /ido-specs/doc/applications-onboard/smartedge-open-eaa/?page=secure-access-service-edge-experience-kit
-      - title: "Certificate Signing"
-        path: /ido-specs/doc/applications-onboard/smartedge-open-certsigner/?page=secure-access-service-edge-experience-kit
-      - title: "Interface Service"
-        path: /ido-specs/doc/applications-onboard/smartedge-open-interface-service/?page=secure-access-service-edge-experience-kit
-      - title: "VM Support"
-        path: /ido-specs/doc/applications-onboard/smartedge-open-network-edge-vm-support/?page=secure-access-service-edge-experience-kit
-      - title: "Core Network Configuration Agent (CNCA)"
-        path: /ido-specs/doc/applications-onboard/using-smartedge-open-cnca/?page=secure-access-service-edge-experience-kit                                      
