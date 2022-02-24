@@ -42,7 +42,6 @@ section:
             path: /docs/components/resource-management/topology-manager/?page=building-blocks
             meta_title: 
             meta_description:      
-        
       - title: Security
         path: /docs/components/networking/multus
         meta_title: 
