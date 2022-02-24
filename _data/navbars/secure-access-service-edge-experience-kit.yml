@@ -2,6 +2,8 @@ title: "Secure Access Service Edge Experience Kit"
 path: /experience-kits/
 order: 5
 section:
+  - title: "Overview"
+    path: /ido-specs/doc/reference-architectures/smartedge-open-experience-kit_sdwan/?page=secure-access-service-edge-experience-kit
   - title: "Getting Started"
     section:
       - title: "Cluster Setup"
