@@ -8,8 +8,7 @@ section:
     path: /docs/experience-kits/developer-experience-kit/#howitworks
   - title: "Get Started"
     path: /docs/experience-kits/developer-experience-kit/#getstarted
-
-    title: "Building Blocks"
+  - title: "Building Blocks"
     path: /building-blocks/
     section:
       - title: Networking
