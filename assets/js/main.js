@@ -9640,6 +9640,14 @@ jQuery(window).on('load', function(){
     if(pathname.includes('/docs/') || pathname.includes('/ido-specs/')){
         jQuery('.sidebar-docs .leftSection .collapsedArea ul li span a[href="'+pathname+'"]').parent('span').parent('li').addClass('uk-active');
     }
+    jQuery('.sidebar-docs .leftSection .collapsedArea ul li>ul li span a').on('click', function(){
+        setTimeout(function(){
+            pathURL = window.location.pathname + window.location.search + window.location.hash;
+            var pathname = pathURL.replace(/\/$/, "");
+            jQuery('.sidebar-docs .leftSection .collapsedArea ul li').removeClass('uk-active')
+            jQuery('.sidebar-docs .leftSection .collapsedArea ul li span a[href="'+pathname+'"]').parent('span').parent('li').addClass('uk-active');
+        }, 500)
+    })
     if(jQuery('.sidebar-docs .leftSection .collapsedArea ul li.uk-active').length > 0){
         jQuery('.sidebar-docs .leftSection .collapsedArea ul li.uk-active').parents('.hasChild').addClass('openList');
         jQuery('.sidebar-docs .leftSection .collapsedArea ul li.uk-active').parents('.hasChild').children('.uk-nav').slideDown();
@@ -9682,3 +9690,4 @@ jQuery(window).on('scroll', function(){
         jQuery('.leftSection').removeClass('leftSectionFixed');
     }
 })
+
