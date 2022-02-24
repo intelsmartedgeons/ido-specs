@@ -12,10 +12,6 @@ section:
         path: /ido-specs/doc/getting-started/converged-edge-experience-kits/?page=near-edge-experience-kit
         meta_title: 
         meta_description:
-      - title: Offline Deployment
-        path: /ido-specs/doc/getting-started/offline-edge-deployment/?page=near-edge-experience-kit
-        meta_title:
-        meta_description:
       - title: Non-root User
         path: /ido-specs/doc/getting-started/non-root-user/?page=near-edge-experience-kit
         meta_title: 
@@ -71,31 +67,11 @@ section:
         meta_title: 
         meta_description:
         
-      - title: FPGA Support
-        path: /ido-specs/doc/building-blocks/enhanced-platform-awareness/smartedge-open-fpga/?page=near-edge-experience-kit
-        meta_title:
-        meta_description: 
-        
-      - title: Intel® vRAN Dedicated Accelerator ACC100
-        path: /ido-specs/doc/building-blocks/enhanced-platform-awareness/smartedge-open-acc100/?page=near-edge-experience-kit
-        meta_title: 
-        meta_description: 
-        
       - title: Intel® Movidius™ Myriad™ X HDDL
         path: /ido-specs/doc/building-blocks/enhanced-platform-awareness/smartedge-open_hddl/?page=near-edge-experience-kit
         meta_title: 
         meta_description: 
-        
-      - title: Visual Compute Accelerator Card - Analytics (VCA-A)
-        path: /ido-specs/doc/building-blocks/enhanced-platform-awareness/smartedge-open-vcac-a/?page=near-edge-experience-kit
-        meta_title:
-        meta_description:
-        
-      - title: Intel QuickAssist Adapter
-        path: /ido-specs/doc/building-blocks/enhanced-platform-awareness/smartedge-open-qat/?page=near-edge-experience-kit
-        meta_title: 
-        meta_description: 
-        
+                
       - title: Topology Manager
         path: /ido-specs/doc/building-blocks/enhanced-platform-awareness/smartedge-open-topology-manager/?page=near-edge-experience-kit
         meta_title: 
@@ -107,14 +83,9 @@ section:
         meta_description: 
         
       - title: Resource Management Daemon
-        path: /ido-specs/doc/building-blocks/enhanced-platform-awareness/smartedge-open-rmd?page=near-edge-experience-kit
+        path: /ido-specs/doc/building-blocks/enhanced-platform-awareness/smartedge-open-rmd/?page=near-edge-experience-kit
         meta_title: 
         meta_description:
-        
-      - title: Edge Multi-Cluster Orchestrator
-        path: /ido-specs/doc/building-blocks/emco/smartedge-open-emco/?page=near-edge-experience-kit?page=near-edge-experience-kit
-        meta_title:
-        meta_description: 
   - title: "Application Onboarding"
     order: 3
     section:
@@ -143,6 +114,6 @@ section:
         meta_title:
         meta_description: 
       - title: Core Network Configuration Agent (CNCA)
-        path: /ido-specs/doc/applications-onboard/network-edge-applications-onboarding/?page=near-edge-experience-kit
+        path: /ido-specs/doc/applications-onboard/using-smartedge-open-cnca/?page=near-edge-experience-kit
         meta_title:
         meta_description: 
