@@ -18,13 +18,19 @@ section:
             meta_title: 
             meta_description: 
           - title: "SR-IOV FEC Operator"
-            path: /ido-specs/doc/building-blocks/enhanced-platform-awareness/smartedge-open-acc100/?page=private-wireless-experience-kit
+            path: https://github.com/smart-edge-open/docs/blob/main/components/resource-management/sriov-fec-operator.md
             meta_title: 
             meta_description:  
           - title: "Multus CNI"
             path: /docs/components/networking/multus/?page=private-wireless-experience-kit
             meta_title: 
-            meta_description:   
+            meta_description:
+      - title: "Software Modules"
+        section:
+          - title: "5G UPF Workload Acceleration"
+            path: 
+            meta_title: 
+            meta_description: 
       - title: "Resource Management"
         section:
           - title: "Node Feature Discovery"
