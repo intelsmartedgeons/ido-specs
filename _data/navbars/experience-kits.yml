@@ -40,4 +40,8 @@ section:
           - title: "Topology Manager"
             path: /docs/components/resource-management/topology-manager/?page=private-wireless-experience-kit
             meta_title: 
-            meta_description:       
+            meta_description:
+      - title: "Telemetry"
+        path: /docs/components/telemetry/telemetry/?page=private-wireless-experience-kit
+        meta_title: 
+        meta_description:             
