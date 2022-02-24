@@ -24,7 +24,7 @@ section:
         path: /ido-specs/doc/building-blocks/enhanced-platform-awareness/smartedge-open_hddl/?page=secure-access-service-edge-experience-kit
       - title: "Telemetry"
         path: /ido-specs/doc/building-blocks/enhanced-platform-awareness/smartedge-open-telemetry/?page=secure-access-service-edge-experience-kit
-    title: "Application Onboarding"
+  - title: "Application Onboarding"
     section:
       - title: "Network Edge Application Onboarding"
         path: /ido-specs/doc/applications-onboard/network-edge-applications-onboarding/?page=secure-access-service-edge-experience-kit
