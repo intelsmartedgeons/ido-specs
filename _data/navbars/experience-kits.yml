@@ -3,11 +3,11 @@ path: /experience-kits/
 order: 4
 section:
   - title: "Overview"
-    path: /docs/experience-kits/private-wireless-experience-kit/#Overview
+    path: /docs/experience-kits/private-wireless-experience-kit/#overview
   - title: "How it works"
-    path: /docs/experience-kits/private-wireless-experience-kit/#howitworks
+    path: /docs/experience-kits/private-wireless-experience-kit/#how-it-works
   - title: "Get Started"
-    path: /docs/experience-kits/private-wireless-experience-kit/#getstarted
+    path: /docs/experience-kits/private-wireless-experience-kit/#get-started
 
   - title: "Building Blocks"
     section:
@@ -44,4 +44,4 @@ section:
       - title: "Telemetry"
         path: /docs/components/telemetry/telemetry/?page=private-wireless-experience-kit
         meta_title: 
-        meta_description:             
+        meta_description:      
