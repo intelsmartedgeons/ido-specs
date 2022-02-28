@@ -25,12 +25,6 @@ section:
             path: /docs/components/networking/multus/?page=private-wireless-experience-kit
             meta_title: 
             meta_description:
-      - title: "Software Modules"
-        section:
-          - title: "5G UPF Workload Acceleration"
-            path: 
-            meta_title: 
-            meta_description: 
       - title: "Resource Management"
         section:
           - title: "Node Feature Discovery"
@@ -44,4 +38,10 @@ section:
       - title: "Telemetry"
         path: /docs/components/telemetry/telemetry/?page=private-wireless-experience-kit
         meta_title: 
-        meta_description:      
+        meta_description:
+  - title: "Software Modules"
+    section:
+      - title: "5G UPF Workload Acceleration"
+        path: 
+        meta_title: 
+        meta_description:             
