@@ -42,6 +42,6 @@ section:
   - title: "Software Modules"
     section:
       - title: "5G UPF Workload Acceleration"
-        path: 
+        path: https://github.com/smart-edge-open/docs/software-modules/5G-UPF-workload-acceleration.md
         meta_title: 
         meta_description:             
