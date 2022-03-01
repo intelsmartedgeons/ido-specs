@@ -42,6 +42,6 @@ section:
   - title: "Software Modules"
     section:
       - title: "5G UPF Workload Acceleration"
-        path: /docs/software-modules/5G-UPF-workload-acceleration/?page=private-wireless-experience-kit
+        path: /docs/software-modules/5G-UPF-workload-acceleration
         meta_title: 
         meta_description:             
