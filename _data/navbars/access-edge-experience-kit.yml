@@ -2,7 +2,7 @@ title: "Access Edge Experience Kit"
 order: 6
 section:
   - title: "Overview"
-  - path: /ido-specs/doc/reference-architectures/ran/smartedge-open_ran
+    path: /ido-specs/doc/reference-architectures/ran/smartedge-open_ran
   - title: "Getting Started"
     order: 1
     section:
