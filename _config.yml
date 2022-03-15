@@ -62,20 +62,20 @@ authors:
       avatar:       avatar-tom.png
 
 # Social icons displayed in footer
-social:
-    email:
-    website:
-    facebook:       https://www.facebook.com/
-    flickr:
-    dribbble:
-    github:
-    googleplus:
-    instagram:      https://www.instagram.com/
-    linkedin:
-    pinterest:
-    twitter:        https://twitter.com/
-    vimeo:          https://vimeo.com/
-    youtube:
+#social:
+    #email:
+    #website:
+    #facebook:       https://www.facebook.com/
+    #flickr:
+    #dribbble:
+    #github:
+    #googleplus:
+    #instagram:      https://www.instagram.com/
+    #linkedin:
+    #pinterest:
+    #twitter:        https://twitter.com/
+    #vimeo:          https://vimeo.com/
+    #youtube:
 
 # Share button
 share:
@@ -85,8 +85,8 @@ share:
     facebook:       true # Enable by setting true (Facebook handle not required)
 
 # Default footer image settings
-footer:
-    copyright:      Made by <a href="https://unbound.studio/">Unbound Studio</a> in Cleveland.
+#footer:
+    #copyright:      Made by <a href="https://unbound.studio/">Unbound Studio</a> in Cleveland.
 
 # Disqus comments shortname, requires Disqus account https://disqus.com/
 disqus:
