@@ -250,17 +250,17 @@ Perform the following steps on the target machine before deployment:
 
 2. Change the target system's hostname.
 
-    * Edit the `/etc/hostname` file: 
-      * `vi /etc/hostname`
-      * Press the `Insert` key to enter Insert mode
-      * Delete the old hostname and replace it with the new one. The new hostname can be any combination of valid characters, preferably a meaningful name.
-      * Exit the vi editor by pressing the `Esc` key, then typing `:wq` and pressing the `Enter` key. 
+  * Edit the `/etc/hostname` file: 
+  	* `vi /etc/hostname`
+  	* Press the `Insert` key to enter Insert mode
+  	* Delete the old hostname and replace it with the new one. The new hostname can be any combination of valid characters, preferably a meaningful name.
+  	* Exit the vi editor by pressing the `Esc` key, then typing `:wq` and pressing the `Enter` key. 
   
-    * Edit the `/etc/hosts` file: 
-      * `vi /etc/hosts`
-      * Press the `Insert` key to enter Insert mode
-      * Add a space at the end of both lines in the file and write hostname after it. 
-      * Exit the vi editor by pressing the `Esc` key, then typing `:wq` and pressing the `Enter` key.
+  * Edit the `/etc/hosts` file: 
+  	* `vi /etc/hosts`
+  	* Press the `Insert` key to enter Insert mode
+  	* Add a space at the end of both lines in the file and write hostname after it. 
+  	* Exit the vi editor by pressing the `Esc` key, then typing `:wq` and pressing the `Enter` key.
 
 3. Reboot the target machine.
 
@@ -519,16 +519,17 @@ These steps are performed on the machine where the Ansible playbook will be run.
 
 11. Copy gNodeB and 5GCN images and deployment files
 
-      The binaries from gNodeB and 5GCN are required to be copied from the deployment machine so it needs to have atleast 50-60 GB of storage available. 
+The binaries from gNodeB and 5GCN are required to be copied from the deployment machine so it needs to have atleast 50-60 GB of storage available. 
 
-      gNodeB: `/opt/pwek_offline_files/edge_node` 5GCN: `/opt/pwek_offline_files/controller`
+gNodeB: `/opt/pwek_offline_files/edge_node`
+5GCN: `/opt/pwek_offline_files/controller`
 
 12. Deploy the experience kit.
 
-      Silent deployment:
-      ```shell
-      python3 deploy.py
-      ```
+    Silent deployment:
+    ```shell
+    python3 deploy.py
+    ```
 
 ## 5G Access Network Functions
 
@@ -548,28 +549,27 @@ The following are required for `gNodeB` deployment:
 
 #### Settings
 
-1. Edit the `ido-converged-edge-experience-kits/flavors/pwek-all-in-one/all.yml` file.
+1. Edit the `ido-converged-edge-experience-kits/pwek-all-in-one/all.yml` file.
+```yaml
+# PWEK All in One
+pwek_enable: true
 
-    ```yaml
-    # PWEK All in One
-    pwek_enable: true
+pwek_namespace_enable: true
+pwek_namespace_name: pwek-rdc
 
-    pwek_namespace_enable: true
-    pwek_namespace_name: pwek-rdc
+pwek_5gc_enable: true
+pwek_gnodeb_enable: true
+```
 
-    pwek_5gc_enable: true
-    pwek_gnodeb_enable: true
-    ```
+2. Set the upload path for `GNodeB` prerequisites. 
 
-2. Set the upload path for `GNodeB` prerequisites.
-
-    Edit the `ido-converged-edge-experience-kits/flavors/pwek-all-in-one/all.yml` file to customize the upload path.
-    ```yaml
-    remote_pwek_path: "/opt/pwek"
-    # on edge node
-    pwek_system_studio_license: "{{ remote_pwek_path }}/license"
-    pwek_flexran_extracted: "{{ remote_pwek_path }}/flexran"
-    ```
+Edit the `ido-converged-edge-experience-kits/flavors/pwek-all-in-one/all.yml` file to customize the upload path.
+```yaml
+remote_pwek_path: "/opt/pwek"
+# on edge node
+pwek_system_studio_license: "{{ remote_pwek_path }}/license"
+pwek_flexran_extracted: "{{ remote_pwek_path }}/flexran"
+```
 
 ### Configure PTP Time Synchronization
 
@@ -721,7 +721,6 @@ To deploy `UPF` correctly you must provide a Docker image to Docker Repository o
 ##### Settings
 
 PWEK 5GC path in file `ido-converged-edge-experience-kits/roles/applications/pwek_5gc/defaults/main.yml` used for docker images, shell scripts and helm-charts.
-
 ```yaml
 # Paths for storing pwek related resources
 remote_pwek_path: "/opt/pwek"
@@ -760,117 +759,111 @@ This section describes how to onboard the Intel® Distribution of OpenVINO™ to
 ### Setting - OpenVINO
 
 1. Clone the `edgeapps` repository to the edge node.
-
-    ```shell
-    [root@node]# git clone https://github.com/smart-edge-open/edgeapps.git
-    ```
+```shell
+[root@node]# git clone https://github.com/smart-edge-open/edgeapps.git
+```
 
 2. Build the Docker image.
-
-    ```shell
-    [root@node]# cd edgeapps/applications/openvino/producer
-    [root@node]# bash ./build-image.sh
-    [root@node]# cd ../consumer
-    [root@node]# bash ./build-image.sh pwek
-    ```
+```shell
+[root@node]# cd edgeapps/applications/openvino/producer
+[root@node]# bash ./build-image.sh
+[root@node]# cd ../consumer
+[root@node]# bash ./build-image.sh pwek
+```
 
 3. Attach a VF NIC to the OpenVINO pod. 
 Make sure the VF number of [PF interface p5p1](#edgeapp-n6-interface) defined for EdgeApp above and that sriov_numvfs is set to a non-zero value.
-
-    ```shell
-    [root@node]# cat /sys/class/net/p5p1/device/sriov_numvfs
-    5
-    ```
+```shell
+[root@node]# cat /sys/class/net/p5p1/device/sriov_numvfs
+5
+```
 
 4. Verify `sriov-net-openvino` configuration.
 `sriov-net-openvino` is a resource of type NetworkAttachmentDefinition. Ensure it is defined in the default namespace with the subnet set to 6.6.6.0/24.
-
-    ```shell
-    [root@controller]# get net-attach-def sriov-net-openvino -o yaml
-    apiVersion: k8s.cni.cncf.io/v1
-    kind: NetworkAttachmentDefinition
-    metadata:
-      annotations:
-        k8s.v1.cni.cncf.io/resourceName: intel.com/intel_sriov_10G_VEDIOSTREAM
-      creationTimestamp: "2021-09-07T11:39:58Z"
-      generation: 4
-      managedFields:
-      - apiVersion: k8s.cni.cncf.io/v1
-        fieldsType: FieldsV1
-        fieldsV1:
-          f:metadata:
-            f:annotations:
-              .: {}
-              f:k8s.v1.cni.cncf.io/resourceName: {}
-          f:spec: {}
-        manager: Go-http-client
-        operation: Update
-        time: "2021-09-07T11:39:58Z"
-      - apiVersion: k8s.cni.cncf.io/v1
-        fieldsType: FieldsV1
-        fieldsV1:
-          f:spec:
-            f:config: {}
-        manager: kubectl-edit
-        operation: Update
-        time: "2021-09-10T05:48:00Z"
-      name: sriov-net-openvino
-      namespace: default
-      resourceVersion: "718200"
-      uid: 10fab096-26af-463e-82ff-25ceec8017b5
-    spec:
-      config: '{ "type": "sriov", "ipam": { "type": "host-local", "subnet": "6.6.6.0/24",
-        "rangeStart": "6.6.6.7", "rangeEnd": "6.6.6.30", "routes": [{ "dst": "0.0.0.0/0"}],
-        "gateway": "6.6.6.1" } }'
-    ```
+```shell
+[root@controller]# get net-attach-def sriov-net-openvino -o yaml
+apiVersion: k8s.cni.cncf.io/v1
+kind: NetworkAttachmentDefinition
+metadata:
+  annotations:
+    k8s.v1.cni.cncf.io/resourceName: intel.com/intel_sriov_10G_VEDIOSTREAM
+  creationTimestamp: "2021-09-07T11:39:58Z"
+  generation: 4
+  managedFields:
+  - apiVersion: k8s.cni.cncf.io/v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:metadata:
+        f:annotations:
+          .: {}
+          f:k8s.v1.cni.cncf.io/resourceName: {}
+      f:spec: {}
+    manager: Go-http-client
+    operation: Update
+    time: "2021-09-07T11:39:58Z"
+  - apiVersion: k8s.cni.cncf.io/v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:spec:
+        f:config: {}
+    manager: kubectl-edit
+    operation: Update
+    time: "2021-09-10T05:48:00Z"
+  name: sriov-net-openvino
+  namespace: default
+  resourceVersion: "718200"
+  uid: 10fab096-26af-463e-82ff-25ceec8017b5
+spec:
+  config: '{ "type": "sriov", "ipam": { "type": "host-local", "subnet": "6.6.6.0/24",
+    "rangeStart": "6.6.6.7", "rangeEnd": "6.6.6.30", "routes": [{ "dst": "0.0.0.0/0"}],
+    "gateway": "6.6.6.1" } }'
+```
 
 ### Deploy the OpenVINO Application
 
 1. Apply the yaml file on the controller node.
-
-    ```shell
-    [root@controller]# kubectl apply -f openvino-prod-app.yaml
-    [root@controller]# kubectl apply -f openvino-cons-sriov-app.yaml
-    [root@controller]# kubectl kubectl certificate approve openvino-prod-app
-    [root@controller]# kubectl kubectl certificate approve openvino-cons-app
-    [root@controller]# kubectl get po
-    NAME                                 READY   STATUS    RESTARTS   AGE
-    openvino-cons-app-7bbd7c665c-5kf5q   1/1     Running   0          146m
-    openvino-prod-app-79d5756d76-hhmjg   1/1     Running   0          3d8h
-    ```
+```shell
+[root@controller]# kubectl apply -f openvino-prod-app.yaml
+[root@controller]# kubectl apply -f openvino-cons-sriov-app.yaml
+[root@controller]# kubectl kubectl certificate approve openvino-prod-app
+[root@controller]# kubectl kubectl certificate approve openvino-cons-app
+[root@controller]# kubectl get po
+NAME                                 READY   STATUS    RESTARTS   AGE
+openvino-cons-app-7bbd7c665c-5kf5q   1/1     Running   0          146m
+openvino-prod-app-79d5756d76-hhmjg   1/1     Running   0          3d8h
+```
 
 2. To apply a new NetworkPolicy for the OpenVINO application, please refer the [document](https://github.com/smart-edge-open/ido-specs/blob/mainline/doc/applications-onboard/network-edge-applications-onboarding.md#applying-kubernetes-network-policies-1). Or delete the block-all NetworkPolicy in the default namespace.
-
-    ```shell
-    [root@controller]# kubectl delete networkpolicy block-all-ingress
-    ```
+```shell
+[root@controller]# kubectl delete networkpolicy block-all-ingress
+```
 
 ### Start a Network Stream in the OpenVINO Application
 
 1. Login the edge node, and add an additional route rule for the OpenVINO consumer application.
-    ```shell
-    [root@node]# docker ps | grep k8s_openvino-cons-app | awk '{print $1}'
-    2a808c0b24a7
-    [root@node]# docker inspect -f {{.State.Pid}} 2a808c0b24a7
-    63011
-    [root@node]# nsenter -n -t 63011
-    Revert complete!
-    [root@node]# route add -net 195.168.1.0 netmask 255.255.255.0 gw 6.6.6.1
-    [root@node]# route
-    Kernel IP routing table
-    Destination     Gateway         Genmask         Flags Metric Ref    Use Iface
-    default         gateway         0.0.0.0         UG    0      0        0 eth0
-    6.6.6.0         0.0.0.0         255.255.255.0   U     0      0        0 net1
-    gateway         0.0.0.0         255.255.255.255 UH    0      0        0 eth0
-    195.168.1.0     6.6.6.1         255.255.255.0   UG    0      0        0 net1
-    ```
+```shell
+[root@node]# docker ps | grep k8s_openvino-cons-app | awk '{print $1}'
+2a808c0b24a7
+[root@node]# docker inspect -f {{.State.Pid}} 2a808c0b24a7
+63011
+[root@node]# nsenter -n -t 63011
+Revert complete!
+[root@node]# route add -net 195.168.1.0 netmask 255.255.255.0 gw 6.6.6.1
+[root@node]# route
+Kernel IP routing table
+Destination     Gateway         Genmask         Flags Metric Ref    Use Iface
+default         gateway         0.0.0.0         UG    0      0        0 eth0
+6.6.6.0         0.0.0.0         255.255.255.0   U     0      0        0 net1
+gateway         0.0.0.0         255.255.255.255 UH    0      0        0 eth0
+195.168.1.0     6.6.6.1         255.255.255.0   UG    0      0        0 net1
+```
  > NOTE: The subnet 195.168.1.0/24 is the UE (User Equipment) network segment allocated by 5GC network functions.
 
 2. Install [VLC apk](https://m.apkpure.com/vlc-for-android/org.videolan.vlc) on the UE.
-    - Get the IP address of the SR-IOV interface attached to OpenVINO consumer pod by running the `ip a` command in the consumer pod. The ip address is in 6.6.6.0/24 subnet.
-    - Select the "Open Network Stream" option.
-    - Input the address "rtmp://<openvino_consumer_pod_sriov_ip>:5000/live/out.flv". Here, the openvino_consumer_pod_sriov_ip is `ip a` the address get by  test.
-    - The video will load after one second.
+- Get the IP address of the SR-IOV interface attached to OpenVINO consumer pod by running the `ip a` command in the consumer pod. The ip address is in 6.6.6.0/24 subnet.
+- Select the "Open Network Stream" option.
+- Input the address "rtmp://<openvino_consumer_pod_sriov_ip>:5000/live/out.flv". Here, the openvino_consumer_pod_sriov_ip is the address get by `ip a`.
+- The video will load after one second.
 
 ## Summary
 This guide walked you through deploying the 5G Private Wireless Experience Kit with Integrated RAN. The reference implementation of Intel® Smart Edge Open created by this process can be used to efficiently deploy, manage, and optimize network functions and applications specifically for an on-premises private wireless network. You can continue to customize this deployment to meet your own use cases. 
