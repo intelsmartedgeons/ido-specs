@@ -37,57 +37,57 @@ section:
         path: /ido-specs/doc/building-blocks/dataplane/smartedge-open-interapp/?page=access-edge-experience-kit
         meta_title:
         meta_description: 
-        
+
       - title: Hugepage
         path:  /ido-specs/doc/building-blocks/enhanced-platform-awareness/smartedge-open-hugepage/?page=access-edge-experience-kit
         meta_title: 
         meta_description:
-        
+
       - title: Node Feature Discovery
         path:  /ido-specs/doc/building-blocks/enhanced-platform-awareness/smartedge-open-node-feature-discovery/?page=access-edge-experience-kit
         meta_title: 
         meta_description: 
-        
+
       - title: Multiple Interface & PCIe SRIOV
         path: /ido-specs/doc/building-blocks/enhanced-platform-awareness/smartedge-open-sriov-multiple-interfaces/?page=access-edge-experience-kit
         meta_title: 
         meta_description:
-        
+
       - title: Dedicated CPU Core
         path: /ido-specs/doc/building-blocks/enhanced-platform-awareness/smartedge-open-dedicated-core/?page=access-edge-experience-kit
         meta_title: 
         meta_description:
-        
+
       - title: BIOS & Firmware Configuration
         path: /ido-specs/doc/building-blocks/enhanced-platform-awareness/smartedge-open-bios/?page=access-edge-experience-kit
         meta_title: 
         meta_description:
-        
+
       - title: FPGA Support
         path: /ido-specs/doc/building-blocks/enhanced-platform-awareness/smartedge-open-fpga/?page=access-edge-experience-kit
         meta_title:
         meta_description: 
-        
+
       - title: Intel® vRAN Dedicated Accelerator ACC100
         path: /ido-specs/doc/building-blocks/enhanced-platform-awareness/smartedge-open-acc100/?page=access-edge-experience-kit
         meta_title: 
         meta_description: 
-        
+
       - title: Topology Manager
         path: /ido-specs/doc/building-blocks/enhanced-platform-awareness/smartedge-open-topology-manager/?page=access-edge-experience-kit
         meta_title: 
         meta_description: 
-        
+
       - title: Telemetry
         path: /ido-specs/doc/building-blocks/enhanced-platform-awareness/smartedge-open-telemetry/?page=access-edge-experience-kit
         meta_title: 
         meta_description: 
-        
+
       - title: Resource Management Daemon
         path: /ido-specs/doc/building-blocks/enhanced-platform-awareness/smartedge-open-rmd/?page=access-edge-experience-kit
         meta_title: 
         meta_description:
-        
+
   - title: "Application Onboarding"
     order: 3
     section:

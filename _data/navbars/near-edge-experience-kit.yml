@@ -33,57 +33,57 @@ section:
         path: /ido-specs/doc/building-blocks/dataplane/smartedge-open-interapp/?page=near-edge-experience-kit
         meta_title:
         meta_description: 
-        
+
       - title: OVN/OVS
         path: /ido-specs/doc/building-blocks/dataplane/smartedge-open-ovn/?page=near-edge-experience-kit
         meta_title: 
         meta_description:
-        
+
       - title: Userspace CNI
         path: /ido-specs/doc/building-blocks/dataplane/smartedge-open-userspace-cni/?page=near-edge-experience-kit
         meta_title: 
         meta_description: 
-        
+
       - title: Hugepage
         path:  /ido-specs/doc/building-blocks/enhanced-platform-awareness/smartedge-open-hugepage/?page=near-edge-experience-kit
         meta_title: 
         meta_description:
-        
+
       - title: Node Feature Discovery
         path:  /ido-specs/doc/building-blocks/enhanced-platform-awareness/smartedge-open-node-feature-discovery/?page=near-edge-experience-kit
         meta_title: 
         meta_description: 
-        
+
       - title: Multiple Interface & PCIe SRIOV
         path: /ido-specs/doc/building-blocks/enhanced-platform-awareness/smartedge-open-sriov-multiple-interfaces/?page=near-edge-experience-kit
         meta_title: 
         meta_description:
-        
+
       - title: Dedicated CPU Core
         path: /ido-specs/doc/building-blocks/enhanced-platform-awareness/smartedge-open-dedicated-core/?page=near-edge-experience-kit
         meta_title: 
         meta_description:
-        
+
       - title: BIOS & Firmware Configuration
         path: /ido-specs/doc/building-blocks/enhanced-platform-awareness/smartedge-open-bios/?page=near-edge-experience-kit
         meta_title: 
         meta_description:
-        
+
       - title: Intel® Movidius™ Myriad™ X HDDL
         path: /ido-specs/doc/building-blocks/enhanced-platform-awareness/smartedge-open_hddl/?page=near-edge-experience-kit
         meta_title: 
         meta_description: 
-                
+
       - title: Topology Manager
         path: /ido-specs/doc/building-blocks/enhanced-platform-awareness/smartedge-open-topology-manager/?page=near-edge-experience-kit
         meta_title: 
         meta_description: 
-        
+
       - title: Telemetry
         path: /ido-specs/doc/building-blocks/enhanced-platform-awareness/smartedge-open-telemetry/?page=near-edge-experience-kit
         meta_title: 
         meta_description: 
-        
+
       - title: Resource Management Daemon
         path: /ido-specs/doc/building-blocks/enhanced-platform-awareness/smartedge-open-rmd/?page=near-edge-experience-kit
         meta_title: 

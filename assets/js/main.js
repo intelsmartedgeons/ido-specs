@@ -1,3 +1,6 @@
+/* SPDX-License-Identifier: Apache-2.0
+ * Copyright (c) 2021 Intel Corporation
+ */
 (function(global, factory) {
     typeof exports === "object" && typeof module !== "undefined" ? module.exports = factory() : typeof define === "function" && define.amd ? define("uikit", factory) : (global = typeof globalThis !== "undefined" ? globalThis : global || self, 
     global.UIkit = factory());
@@ -9648,8 +9651,8 @@ jQuery(window).on('load', function(){
             jQuery('.sidebar-docs .leftSection .collapsedArea ul li span a[href="'+pathname+'"]').parent('span').parent('li').addClass('uk-active');
             jQuery('.sidebar-docs .leftSection .collapsedArea ul li span a[href="'+pathname+'"]').parent('span').parent('li').siblings('li').removeClass('openList')
         }, 500)
-        
-        
+
+
         if(jQuery('#breadcrumbs').length){
 			setTimeout(function(){
 				const breadcrumbs    = document.querySelector('#breadcrumbs').innerHTML;

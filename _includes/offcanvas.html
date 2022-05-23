@@ -6,7 +6,6 @@
         <button class="uk-offcanvas-close" type="button" data-uk-close></button>
       
         <ul class="uk-nav uk-nav-primary uk-margin-top">
-            {% comment %}
             {% for link in site.data.navigation_mobile %}
                 {% if link.url contains 'http' %}
                     {% assign domain = '' %}
@@ -26,14 +25,11 @@
                     <li{{ current }}><a href="{{ domain }}{{ link.url }}" {% if link.url contains 'http' %}target="_blank" {% endif %}>{{ link.title }}</a></li>
                 {% endif %}
             {% endfor %}
-            {% endcomment %}
         </ul>
 
         <div class="uk-margin-top uk-text-center">
             <div data-uk-grid class="uk-child-width-auto uk-grid-small uk-flex-center uk-grid">
-                {% comment %}
                 {% include social-networks.html %}
-                {% endcomment %}
             </div>
         </div>
 
