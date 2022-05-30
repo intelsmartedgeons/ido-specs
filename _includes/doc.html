@@ -1,6 +1,6 @@
 <!--
 SPDX-License-Identifier: Apache-2.0
-Copyright (c) 2021 Intel Corporation
+Copyright (c) 2021-2022 Intel Corporation
 -->
 <script src="{{ "/assets/js/jquery.js" | relative_url }}"></script>
 <link rel="stylesheet" href="{{ "/assets/css/ido-specs.css" | relative_url }}" type="text/css" />
@@ -155,7 +155,11 @@ Copyright (c) 2021 Intel Corporation
                     {% include disqus_comments.html %}
                     {% endif %}
                 </article>
-                <div class="rightSidebar">Right Side Bar</div>
+                <div class="rightSidebar">
+                    On this page:
+                    {% include toc.html html=content skip_no_ids=true skipNoIDs=true submenu_class="submenu-%level%" %}
+                </div>
+
                 <script>
                     // Table of contents scroll to
                     UIkit.scroll('#markdown-toc a', {
