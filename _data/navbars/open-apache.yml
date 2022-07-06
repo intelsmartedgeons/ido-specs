@@ -1,5 +1,5 @@
 # SPDX-License-Identifier: Apache-2.0
-# Copyright (c) 2021 Intel Corporation
+# Copyright (c) 2021-2022 Intel Corporation
 title: "Developer Experience Kit"
 path: /open-apache/
 order: 2
@@ -34,6 +34,10 @@ section:
             path: /docs/components/networking/multus/?page=building-blocks
             meta_title: 
             meta_description: 
+          - title: Nodus
+            path: /docs/components/networking/nodus/?page=building-blocks
+            meta_title: 
+            meta_description:
           - title: SR-IOV Network Operator
             path: /docs/components/networking/sriov-network-operator/?page=building-blocks
             meta_title: 
@@ -44,8 +48,8 @@ section:
         meta_title: 
         meta_description:
         section: 
-          - title: CPU Manager
-            path: /docs/components/resource-management/cpu-manager/?page=building-blocks
+          - title: KubeVirt
+            path: /docs/components/resource-management/kubevirt/?page=building-blocks
             meta_title: 
             meta_description:
           - title: Node Feature Discovery
@@ -55,28 +59,42 @@ section:
           - title: Topology Manager
             path: /docs/components/resource-management/topology-manager/?page=building-blocks
             meta_title: 
-            meta_description:      
+            meta_description:
+          - title: CPU Manager
+            path: /docs/components/resource-management/cpu-manager/?page=building-blocks
+            meta_title: 
+            meta_description:
+      
+      - title: Storage
+        path:
+        meta_title: 
+        meta_description:
+        section:
+          - title: Rook-Ceph
+            path: /docs/components/storage/rook-ceph/?page=building-blocks
+            meta_title: 
+            meta_description:
+
       - title: Security
         path: /docs/components/networking/multus
         meta_title: 
         meta_description:
         section: 
-          - title: Application Security
+          - title: Intel ISec
+            path: /docs/components/security/platform-attestation-using-isecl/?page=building-blocks
+            meta_title: 
+            meta_description:
+          - title: Intel SGX
             path: /docs/components/security/application-security-using-sgx/?page=building-blocks
             meta_title: 
             meta_description:
-          - title: Platform Attestation
-            path: /docs/components/security/platform-attestation-using-isecl/?page=building-blocks
-            meta_title: 
-            meta_description:   
 
-      #- title: SRIOV
       - title: Telemetry
         path: /docs/components/telemetry/telemetry/?page=building-blocks
         meta_title: 
         meta_description: 
 
-      - title: Application Onboarding
-        path: /docs/application-onboarding/application-onboarding-cmdline/?page=building-blocks
-        meta_title: 
-        meta_description:
+      #- title: Application Onboarding
+      #  path: /docs/application-onboarding/application-onboarding-cmdline/?page=building-blocks
+      #  meta_title: 
+      #  meta_description:
