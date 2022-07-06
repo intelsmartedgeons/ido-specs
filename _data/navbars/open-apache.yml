@@ -80,7 +80,7 @@ section:
         meta_title: 
         meta_description:
         section: 
-          - title: Intel ISec
+          - title: Intel ISecL
             path: /docs/components/security/platform-attestation-using-isecl/?page=building-blocks
             meta_title: 
             meta_description:
