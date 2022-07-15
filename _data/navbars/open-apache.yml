@@ -5,33 +5,33 @@ path: /open-apache/
 order: 2
 section:
   - title: "Introduction"
-    path: /docs/developer-experience-kit/developer-experience-kit-introduction
+    path: /docs/experience-kits/developer-experience-kit/developer-experience-kit-introduction
   - title: "Building blocks"
-    path: /docs/developer-experience-kit/developer-experience-kits-building-blocks
+    path: /docs/experience-kits/developer-experience-kit/developer-experience-kits-building-blocks
   - title: "Installation requirements"
-    path: /docs/developer-experience-kit/developer-experience-kit-requirements
+    path: /docs/experience-kits/developer-experience-kit/developer-experience-kit-requirements
+  - title: "Prepare the provisioning system"
+    path: /docs/experience-kits/developer-experience-kit/developer-experience-kit-prepare-the-provisioning-system
   - title: "Default Installation"
     path: /default-installation/
     section:
       - title: "About the default installation"
-        path: /docs/developer-experience-kit/default-installation/developer-experience-kit-default-install
-        section:
-          - title: "Create installation image"
-            path: /docs/developer-experience-kit/default-installation/create-installation-image-dek-default/?page=default-installation
-          - title: "Install installation image"
-            path: /docs/developer-experience-kit/default-installation/install-the-image-dek-default/?page=default-installation
+        path: /docs/experience-kits/developer-experience-kit/default-installation/developer-experience-kit-default-install/?page=default-installation
+      - title: "Create installation image"
+        path: /docs/experience-kits/developer-experience-kit/default-installation/create-installation-image-dek-default/?page=default-installation
+      - title: "Install installation image"
+        path: /docs/experience-kits/developer-experience-kit/default-installation/install-the-image-dek-default/?page=default-installation
   - title: "Advanced installation"
     path: /advanced-installation/
     section:
       - title: "About the advanced installation"
-        path: /docs/developer-experience-kit/advanced-installation/advanced-installation-introduction
-        section:
-          - title: "Set up security features"
-            path: /docs/developer-experience-kit/advanced-installation/developer-experience-kit-security-features
-          - title: "Create and flash the installation image"
-            path: /docs/developer-experience-kit/advanced-installation/create-and-flash-installation-image
-          - title: "Install image on target system"
-            path: /docs/developer-experience-kit/advanced-installation/install-image-target-system
+        path: /docs/experience-kits/developer-experience-kit/advanced-installation/advanced-installation-introduction/?page=advanced-installation
+      - title: "Set up security features"
+        path: /docs/experience-kits/developer-experience-kit/advanced-installation/developer-experience-kit-security-features/?page=advanced-installation
+      - title: "Create and flash the installation image"
+        path: /docs/experience-kits/developer-experience-kit/advanced-installation/create-and-flash-installation-image/?page=advanced-installation
+      - title: "Install image on target system"
+        path: /docs/experience-kits/developer-experience-kit/advanced-installation/install-image-target-system/?page=advanced-installation
   # - title: "Default Installation"
   #   path:
   #   section:
