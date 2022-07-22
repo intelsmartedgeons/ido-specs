@@ -131,11 +131,11 @@ jQuery(document).ready(function(){
 		jQuery('#alertMsg').remove();
 	});
 	 jQuery("#contact-button").click(function() {
-        if(jQuery(this).parent().css("left") == "-280px"){
-            jQuery(this).parent().animate({"left": "0px"});
+        if(jQuery(this).parent().attr('style')){
+            jQuery(this).parent().removeAttr('style')
         }
         else{
-            jQuery(this).parent().animate({"left": "-280px"});
+            jQuery(this).parent().animate({"left": "0px"});
          }
       });
 });
