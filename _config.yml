@@ -5,7 +5,7 @@
 # 'bundle exec jekyll serve'. If you change this file, please restart the server process.
 
 # Site title and description
-title:              Intel® Smart Edge Open
+title:              Intel® Smart Edge
 description:        Documentation
 lang:               en
 
@@ -18,7 +18,8 @@ permalink:          /:title/
 # Site base hostname & protocol, e.g. http://example.com
 url:                ""
 
-main_url:           "https://onsumaye-team.github.io"
+# main_url:           "https://onsumaye-team.github.io"
+main_url:           "https://intelsmartedgeons.github.io"
 
 # Site logo # e.g. logo.png, upload logo image file to /uploads/ folder
 logo:               
